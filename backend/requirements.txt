@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+PyMuPDF
+pymupdf4llm
+pypdf
+spacy
+pandas
+openpyxl
+google-genai
+pydantic
+chromadb
+sentence-transformers
+groq
