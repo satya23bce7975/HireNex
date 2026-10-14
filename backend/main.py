@@ -1,3 +1,4 @@
+
 from __future__ import annotations
 
 import hashlib
@@ -6,11 +7,11 @@ import io
 import json
 import re
 import shutil
+import sys
 import threading
 import time
 import uuid
 import zipfile
-import sys
 
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
@@ -24,11 +25,6 @@ from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
 try:
-    import fitz
-except Exception:
-    fitz = None
-
-try:
     from pypdf import PdfReader
 except Exception:
     PdfReader = None
@@ -39,9 +35,9 @@ except Exception:
     pymupdf4llm = None
 
 
-# --------------------------------------------------
-# PATHS AND ENVIRONMENT
-# --------------------------------------------------
+# ==================================================
+# CONFIGURATION
+# ==================================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 
@@ -55,6 +51,7 @@ APP_TAGLINE = "Intelligent Candidate Screening & Retrieval Platform"
 
 DATA_DIR = BASE_DIR / "data"
 RESUME_DIR = DATA_DIR / "resumes"
+MANIFEST_PATH = DATA_DIR / "resume_manifest.json"
 
 OUTPUT_DIR = BASE_DIR / "output"
 NLP_OUTPUT_DIR = OUTPUT_DIR / "nlp"
@@ -64,28 +61,28 @@ MD_DIR = BASE_DIR / "md_data"
 RAG_OUTPUT_DIR = BASE_DIR / "ragoutput"
 RAG_DIR = BASE_DIR / "rag"
 
-MANIFEST_PATH = DATA_DIR / "resume_manifest.json"
-
 EVALUATION_DIR = BASE_DIR / "evaluation"
 EVALUATION_RESULT = EVALUATION_DIR / "latest_evaluation.json"
 
-for directory in [
+for directory in (
     RESUME_DIR,
     NLP_OUTPUT_DIR,
     LLM_OUTPUT_DIR,
     MD_DIR,
     RAG_OUTPUT_DIR,
     RAG_DIR,
-]:
+    EVALUATION_DIR,
+):
     directory.mkdir(parents=True, exist_ok=True)
 
 
-# --------------------------------------------------
-# FASTAPI APPLICATION AND CORS
-# --------------------------------------------------
+# ==================================================
+# FASTAPI AND CORS
+# ==================================================
 
 app = FastAPI(
     title=APP_TITLE,
+    description=APP_TAGLINE,
     version="1.0.0",
 )
 
@@ -106,9 +103,9 @@ app.add_middleware(
 )
 
 
-# --------------------------------------------------
+# ==================================================
 # BACKGROUND JOB MANAGEMENT
-# --------------------------------------------------
+# ==================================================
 
 executor = ThreadPoolExecutor(
     max_workers=1,
@@ -189,8 +186,8 @@ def run_job(job_id: str, function, *args, **kwargs) -> None:
 
     try:
         result = function(job_id, *args, **kwargs)
-
         final_job = get_job(job_id)
+
         failure_count = int(final_job.get("failed", 0) or 0)
 
         if isinstance(result, dict):
@@ -229,9 +226,9 @@ def run_job(job_id: str, function, *args, **kwargs) -> None:
         )
 
 
-# --------------------------------------------------
+# ==================================================
 # MANIFEST MANAGEMENT
-# --------------------------------------------------
+# ==================================================
 
 def load_manifest() -> list[dict[str, Any]]:
     if not MANIFEST_PATH.exists():
@@ -243,20 +240,24 @@ def load_manifest() -> list[dict[str, Any]]:
 
         return data if isinstance(data, list) else []
 
-    except Exception:
+    except (OSError, json.JSONDecodeError):
         return []
 
 
 def save_manifest(manifest: list[dict[str, Any]]) -> None:
     MANIFEST_PATH.parent.mkdir(parents=True, exist_ok=True)
 
-    with MANIFEST_PATH.open("w", encoding="utf-8") as file:
+    temporary_path = MANIFEST_PATH.with_suffix(".tmp")
+
+    with temporary_path.open("w", encoding="utf-8") as file:
         json.dump(
             manifest,
             file,
             indent=2,
             ensure_ascii=False,
         )
+
+    temporary_path.replace(MANIFEST_PATH)
 
 
 def next_application_number(
@@ -292,9 +293,9 @@ def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-# --------------------------------------------------
+# ==================================================
 # PDF METADATA
-# --------------------------------------------------
+# ==================================================
 
 def parse_pdf_date(value: Any) -> str:
     if not value:
@@ -324,7 +325,6 @@ def parse_pdf_date(value: Any) -> str:
             int(minute or 0),
             int(second or 0),
         ).isoformat()
-
     except ValueError:
         return str(value)
 
@@ -341,23 +341,20 @@ def extract_pdf_metadata(pdf_bytes: bytes) -> dict[str, Any]:
         return result
 
     try:
-        reader = PdfReader(stream=pdf_bytes)
+        reader = PdfReader(io.BytesIO(pdf_bytes))
         result["pdf_page_count"] = len(reader.pages)
 
         metadata = reader.metadata
 
         if metadata:
-            safe = {
+            result["pdf_metadata"] = {
                 str(key): str(value)
                 for key, value in metadata.items()
             }
 
-            result["pdf_metadata"] = safe
-
             result["pdf_creation_date"] = parse_pdf_date(
                 metadata.get("/CreationDate")
             )
-
             result["pdf_modification_date"] = parse_pdf_date(
                 metadata.get("/ModDate")
             )
@@ -368,17 +365,18 @@ def extract_pdf_metadata(pdf_bytes: bytes) -> dict[str, Any]:
     return result
 
 
-# --------------------------------------------------
-# PDF AND ZIP UPLOAD PROCESSING
-# --------------------------------------------------
+# ==================================================
+# PDF AND ZIP UPLOAD
+# ==================================================
 
 def is_safe_zip_member(name: str) -> bool:
     normalized = name.replace("\\", "/")
+    parts = normalized.split("/")
 
-    if normalized.startswith("/"):
+    if normalized.startswith("/") or ".." in parts:
         return False
 
-    if ".." in Path(normalized).parts:
+    if re.match(r"^[A-Za-z]:", normalized):
         return False
 
     return Path(normalized).suffix.lower() == ".pdf"
@@ -387,9 +385,8 @@ def is_safe_zip_member(name: str) -> bool:
 def collect_pdf_payloads(
     items: list[tuple[str, bytes]],
 ) -> tuple[list[dict[str, Any]], list[str]]:
-
-    payloads: list[dict[str, Any]] = []
-    warnings: list[str] = []
+    payloads = []
+    warnings = []
 
     total_bytes = 0
     max_batch_bytes = 500 * 1024 * 1024
@@ -398,6 +395,10 @@ def collect_pdf_payloads(
         suffix = Path(name).suffix.lower()
 
         if suffix == ".pdf":
+            if not raw:
+                warnings.append(f"Empty PDF skipped: {name}")
+                continue
+
             total_bytes += len(raw)
 
             if total_bytes > max_batch_bytes:
@@ -415,23 +416,30 @@ def collect_pdf_payloads(
             try:
                 with zipfile.ZipFile(io.BytesIO(raw)) as archive:
                     for member in archive.infolist():
-
                         if member.is_dir():
                             continue
 
                         if not is_safe_zip_member(member.filename):
-                            if (
-                                Path(member.filename).suffix.lower()
-                                == ".pdf"
-                            ):
+                            if Path(member.filename).suffix.lower() == ".pdf":
                                 warnings.append(
-                                    "Skipped unsafe ZIP path: "
-                                    f"{member.filename}"
+                                    f"Skipped unsafe ZIP path: {member.filename}"
                                 )
+                            continue
 
+                        if member.file_size > max_batch_bytes:
+                            warnings.append(
+                                f"Skipped oversized PDF: {member.filename}"
+                            )
                             continue
 
                         pdf_bytes = archive.read(member)
+
+                        if not pdf_bytes:
+                            warnings.append(
+                                f"Empty PDF skipped: {member.filename}"
+                            )
+                            continue
+
                         total_bytes += len(pdf_bytes)
 
                         if total_bytes > max_batch_bytes:
@@ -457,7 +465,6 @@ def collect_pdf_payloads(
 def ingest_resumes(
     payloads: list[dict[str, Any]],
 ) -> dict[str, Any]:
-
     manifest = load_manifest()
 
     by_hash = {
@@ -472,19 +479,25 @@ def ingest_resumes(
     for payload in payloads:
         pdf_bytes = payload["pdf_bytes"]
         source_name = payload["source_name"]
-
         digest = sha256_bytes(pdf_bytes)
 
         if digest in by_hash:
-            duplicates.append({
-                "application_no": by_hash[digest]["application_no"],
-                "source_name": source_name,
-            })
-            continue
+            existing = by_hash[digest]
+            existing_pdf = RESUME_DIR / existing.get("stored_pdf", "")
+
+            if existing_pdf.exists():
+                duplicates.append({
+                    "application_no": existing["application_no"],
+                    "source_name": source_name,
+                })
+                continue
+
+            # Repair a stale manifest entry if its PDF is missing.
+            manifest.remove(existing)
+            by_hash.pop(digest, None)
 
         app_no = next_application_number(manifest)
         pdf_path = RESUME_DIR / f"{app_no}.pdf"
-
         pdf_path.write_bytes(pdf_bytes)
 
         record = {
@@ -513,15 +526,15 @@ def ingest_resumes(
     }
 
 
-# --------------------------------------------------
+# ==================================================
 # PDF TO MARKDOWN CONVERSION
-# --------------------------------------------------
+# ==================================================
 
 def convert_one_pdf_to_markdown(pdf_path: Path) -> str:
     if pymupdf4llm is None:
         raise RuntimeError(
             "PyMuPDF4LLM is not installed. "
-            "Run: python -m pip install pymupdf4llm"
+            "Install it with: pip install pymupdf4llm"
         )
 
     markdown = pymupdf4llm.to_markdown(
@@ -537,9 +550,7 @@ def convert_one_pdf_to_markdown(pdf_path: Path) -> str:
     )
 
     if not markdown or not markdown.strip():
-        raise RuntimeError(
-            "PyMuPDF4LLM produced empty Markdown."
-        )
+        raise RuntimeError("PDF conversion produced empty Markdown.")
 
     return markdown
 
@@ -548,7 +559,6 @@ def conversion_worker(
     job_id: str,
     records: list[dict[str, Any]],
 ) -> dict[str, Any]:
-
     manifest = load_manifest()
 
     by_app = {
@@ -560,7 +570,6 @@ def conversion_worker(
     total = len(records)
     converted = []
     failed = []
-
     started_all = time.perf_counter()
 
     update_job(
@@ -570,28 +579,19 @@ def conversion_worker(
         failed=0,
         percentage=0,
         phase="processing",
-        current="",
         message="Starting PDF to Markdown conversion",
     )
 
-    for completed_count, record in enumerate(records, start=1):
+    for index, record in enumerate(records, start=1):
         app_no = record["application_no"]
-
         pdf_path = RESUME_DIR / record["stored_pdf"]
         md_path = MD_DIR / f"{app_no}.md"
 
         update_job(
             job_id,
-            current=record.get(
-                "source_filename",
-                record.get("stored_pdf", app_no),
-            ),
-            completed=completed_count - 1,
-            percentage=(
-                round(((completed_count - 1) / total) * 100)
-                if total
-                else 0
-            ),
+            current=record.get("source_filename", app_no),
+            completed=index - 1,
+            percentage=round(((index - 1) / total) * 100) if total else 0,
             phase="processing",
             message=f"Converting {app_no}",
         )
@@ -599,12 +599,13 @@ def conversion_worker(
         started = time.perf_counter()
 
         try:
-            markdown = convert_one_pdf_to_markdown(pdf_path)
+            if not pdf_path.exists():
+                raise FileNotFoundError(
+                    f"Source PDF is missing: {pdf_path.name}"
+                )
 
-            md_path.write_text(
-                markdown,
-                encoding="utf-8",
-            )
+            markdown = convert_one_pdf_to_markdown(pdf_path)
+            md_path.write_text(markdown, encoding="utf-8")
 
             elapsed = round(time.perf_counter() - started, 3)
 
@@ -627,12 +628,13 @@ def conversion_worker(
         except Exception as exc:
             elapsed = round(time.perf_counter() - started, 3)
 
-            by_app[app_no].update({
-                "markdown_status": "failed",
-                "markdown_conversion_mode": "pymupdf4llm-hybrid-ocr",
-                "markdown_error": str(exc),
-                "markdown_conversion_seconds": elapsed,
-            })
+            if app_no in by_app:
+                by_app[app_no].update({
+                    "markdown_status": "failed",
+                    "markdown_error": str(exc),
+                    "markdown_conversion_mode": "pymupdf4llm-hybrid-ocr",
+                    "markdown_conversion_seconds": elapsed,
+                })
 
             failed.append({
                 "application_no": app_no,
@@ -644,27 +646,18 @@ def conversion_worker(
 
         update_job(
             job_id,
-            completed=completed_count,
+            completed=index,
             failed=len(failed),
-            percentage=(
-                round((completed_count / total) * 100)
-                if total
-                else 0
-            ),
+            percentage=round((index / total) * 100) if total else 0,
             phase="processing",
-            current=record.get(
-                "source_filename",
-                record.get("stored_pdf", app_no),
-            ),
-            message=f"Converted {completed_count} of {total}",
+            current=record.get("source_filename", app_no),
+            message=f"Converted {index} of {total}",
         )
-
-    elapsed_all = round(time.perf_counter() - started_all, 2)
 
     return {
         "converted": converted,
         "failed": failed,
-        "elapsed_seconds": elapsed_all,
+        "elapsed_seconds": round(time.perf_counter() - started_all, 2),
     }
 
 
@@ -675,6 +668,7 @@ def pending_conversion_records() -> list[dict[str, Any]]:
     for record in manifest:
         app_no = record.get("application_no", "")
         md_path = MD_DIR / f"{app_no}.md"
+        pdf_path = RESUME_DIR / record.get("stored_pdf", "")
 
         if (
             record.get("markdown_status") == "success"
@@ -683,102 +677,19 @@ def pending_conversion_records() -> list[dict[str, Any]]:
         ):
             continue
 
+        if not pdf_path.exists():
+            record["markdown_status"] = "failed"
+            record["markdown_error"] = f"Missing PDF: {pdf_path.name}"
+            continue
+
         records.append(record)
 
+    save_manifest(manifest)
     return records
 
 
-# --------------------------------------------------
-# CLEAR STORED DATA
-# --------------------------------------------------
-
-def clear_all_hirenex_data() -> dict[str, Any]:
-    removed = {
-        "pdf": 0,
-        "markdown": 0,
-        "output_files": 0,
-        "rag_output_files": 0,
-        "manifest": 0,
-        "rag_files": 0,
-    }
-
-    def clear_dir(directory: Path, counter_key: str):
-        directory.mkdir(parents=True, exist_ok=True)
-
-        removed[counter_key] = sum(
-            1
-            for item in directory.rglob("*")
-            if item.is_file()
-        )
-
-        for child in list(directory.iterdir()):
-            if child.is_dir():
-                shutil.rmtree(child, ignore_errors=True)
-            else:
-                try:
-                    child.unlink()
-                except FileNotFoundError:
-                    pass
-
-    clear_dir(RESUME_DIR, "pdf")
-    clear_dir(MD_DIR, "markdown")
-    clear_dir(OUTPUT_DIR, "output_files")
-    clear_dir(RAG_OUTPUT_DIR, "rag_output_files")
-
-    if MANIFEST_PATH.exists():
-        MANIFEST_PATH.unlink()
-        removed["manifest"] = 1
-
-    try:
-        retrieval_module = importlib.import_module("retrival")
-
-        clear_function = getattr(
-            retrieval_module,
-            "clear_retrieval_index",
-            None,
-        )
-
-        if callable(clear_function):
-            removed["rag_files"] = int(
-                clear_function() or 0
-            )
-
-    except Exception as exc:
-        removed["rag_clear_warning"] = str(exc)
-
-    for child in list(RAG_DIR.iterdir()):
-        if child.name == "chroma_db":
-            continue
-
-        if child.is_dir():
-            shutil.rmtree(child, ignore_errors=True)
-        else:
-            try:
-                child.unlink()
-            except FileNotFoundError:
-                pass
-
-    for directory in [
-        RESUME_DIR,
-        NLP_OUTPUT_DIR,
-        LLM_OUTPUT_DIR,
-        MD_DIR,
-        RAG_OUTPUT_DIR,
-        RAG_DIR,
-    ]:
-        directory.mkdir(parents=True, exist_ok=True)
-
-    return removed
-
-
-def start_conversion(
-    records: list[dict[str, Any]],
-) -> str:
-
-    job_id = create_job(
-        "markdown_conversion",
-        len(records),
-    )
+def start_conversion(records: list[dict[str, Any]]) -> str:
+    job_id = create_job("markdown_conversion", len(records))
 
     executor.submit(
         run_job,
@@ -790,16 +701,15 @@ def start_conversion(
     return job_id
 
 
-# --------------------------------------------------
+# ==================================================
 # NLP AND LLM PROCESSING
-# --------------------------------------------------
+# ==================================================
 
 def parser_worker(
     job_id: str,
     module_name: str,
     output_dir: Path,
 ) -> Any:
-
     total = len(list(MD_DIR.glob("APP*.md")))
 
     update_job(
@@ -813,12 +723,7 @@ def parser_worker(
     )
 
     module = importlib.import_module(module_name)
-
-    function = getattr(
-        module,
-        "process_resumes",
-        None,
-    )
+    function = getattr(module, "process_resumes", None)
 
     if not callable(function):
         raise AttributeError(
@@ -827,20 +732,13 @@ def parser_worker(
         )
 
     def progress_callback(**progress: Any) -> None:
-        progress_total = int(
-            progress.get("total", total) or 0
-        )
-
-        completed = int(
-            progress.get("completed", 0) or 0
-        )
+        progress_total = int(progress.get("total", total) or 0)
+        completed = int(progress.get("completed", 0) or 0)
 
         updates = dict(progress)
-
         updates["percentage"] = (
             round((completed / progress_total) * 100)
-            if progress_total
-            else 0
+            if progress_total else 0
         )
 
         update_job(job_id, **updates)
@@ -852,11 +750,7 @@ def parser_worker(
     )
 
 
-def locate_output_file(
-    folder: Path,
-    extension: str,
-) -> Path | None:
-
+def locate_output_file(folder: Path, extension: str) -> Path | None:
     preferred = [
         f"resumes.{extension}",
         f"resume.{extension}",
@@ -865,39 +759,28 @@ def locate_output_file(
 
     for name in preferred:
         path = folder / name
-
         if path.exists():
             return path
 
     found = sorted(folder.rglob(f"*.{extension}"))
-
     return found[0] if found else None
 
 
-# --------------------------------------------------
+# ==================================================
 # EVALUATION
-# --------------------------------------------------
+# ==================================================
 
 def evaluation_worker(
     job_id: str,
     include_retrieval: bool = True,
 ) -> dict[str, Any]:
-
-    update_job(
-        job_id,
-        message="Preparing evaluation benchmark...",
-    )
+    update_job(job_id, message="Preparing evaluation benchmark...")
 
     evaluation = importlib.import_module("evaluation")
 
     def run_search(question: str):
         retrieval = importlib.import_module("retrival")
-
-        search = getattr(
-            retrieval,
-            "search_candidates",
-            None,
-        )
+        search = getattr(retrieval, "search_candidates", None)
 
         if not callable(search):
             raise AttributeError(
@@ -916,18 +799,27 @@ def evaluation_worker(
         include_retrieval=include_retrieval,
     )
 
+    if isinstance(result, dict):
+        EVALUATION_DIR.mkdir(parents=True, exist_ok=True)
+        EVALUATION_RESULT.write_text(
+            json.dumps(json_safe(result), indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
+
     return result
 
 
 def conversion_stats() -> dict[str, Any]:
     manifest = load_manifest()
-
     total = len(manifest)
 
     converted = sum(
         1
         for item in manifest
-        if item.get("markdown_status") == "success"
+        if (
+            item.get("markdown_status") == "success"
+            and (MD_DIR / item.get("markdown_file", "")).is_file()
+        )
     )
 
     failed = sum(
@@ -939,12 +831,9 @@ def conversion_stats() -> dict[str, Any]:
     pending = max(total - converted - failed, 0)
 
     state = (
-        "empty"
-        if total == 0
-        else "success"
-        if converted == total
-        else "incomplete"
-        if failed
+        "empty" if total == 0
+        else "success" if converted == total
+        else "incomplete" if failed
         else "pending"
     )
 
@@ -969,49 +858,24 @@ def conversion_stats() -> dict[str, Any]:
     }
 
 
-# --------------------------------------------------
+# ==================================================
 # HEALTH AND STATUS ENDPOINTS
-# --------------------------------------------------
+# ==================================================
 
-@app.get("/api/health")
-def health():
+@app.get("/")
+def root():
     return {
         "status": "ok",
         "app": APP_TITLE,
+        "message": "HireNex API is running.",
+        "health": "/api/health",
+        "docs": "/docs",
     }
 
 
-@app.get("/api/status")
-def status():
-    stats = conversion_stats()
-
-    nlp_path = NLP_OUTPUT_DIR / "resumes.json"
-    llm_path = LLM_OUTPUT_DIR / "resumes.json"
-
-    return {
-        "app": APP_TITLE,
-        "tagline": APP_TAGLINE,
-        "conversion": stats,
-        "nlp_records": count_json_records(nlp_path),
-        "llm_records": count_json_records(llm_path),
-        "nlp_excel": (
-            locate_output_file(NLP_OUTPUT_DIR, "xlsx")
-            is not None
-        ),
-        "llm_excel": (
-            locate_output_file(LLM_OUTPUT_DIR, "xlsx")
-            is not None
-        ),
-        "evaluation": {
-            "benchmark_available": (
-                EVALUATION_DIR / "ground_truth.json"
-            ).exists(),
-            "queries_available": (
-                EVALUATION_DIR / "recruiter_queries.json"
-            ).exists(),
-            "latest_available": EVALUATION_RESULT.exists(),
-        },
-    }
+@app.get("/api/health")
+def health():
+    return {"status": "ok", "app": APP_TITLE}
 
 
 def count_json_records(path: Path) -> int:
@@ -1019,9 +883,7 @@ def count_json_records(path: Path) -> int:
         return 0
 
     try:
-        data = json.loads(
-            path.read_text(encoding="utf-8")
-        )
+        data = json.loads(path.read_text(encoding="utf-8"))
 
         if isinstance(data, list):
             return len(data)
@@ -1037,25 +899,45 @@ def count_json_records(path: Path) -> int:
     return 0
 
 
-# --------------------------------------------------
+@app.get("/api/status")
+def status():
+    stats = conversion_stats()
+    nlp_path = NLP_OUTPUT_DIR / "resumes.json"
+    llm_path = LLM_OUTPUT_DIR / "resumes.json"
+
+    return {
+        "app": APP_TITLE,
+        "tagline": APP_TAGLINE,
+        "conversion": stats,
+        "nlp_records": count_json_records(nlp_path),
+        "llm_records": count_json_records(llm_path),
+        "nlp_excel": locate_output_file(NLP_OUTPUT_DIR, "xlsx") is not None,
+        "llm_excel": locate_output_file(LLM_OUTPUT_DIR, "xlsx") is not None,
+        "evaluation": {
+            "benchmark_available": (
+                EVALUATION_DIR / "ground_truth.json"
+            ).exists(),
+            "queries_available": (
+                EVALUATION_DIR / "recruiter_queries.json"
+            ).exists(),
+            "latest_available": EVALUATION_RESULT.exists(),
+        },
+    }
+
+
+# ==================================================
 # EVALUATION ENDPOINTS
-# --------------------------------------------------
+# ==================================================
 
 @app.get("/api/evaluation/summary")
 def evaluation_summary():
     if not EVALUATION_RESULT.exists():
-        return {
-            "available": False,
-            "result": None,
-        }
+        return {"available": False, "result": None}
 
     try:
         result = json.loads(
-            EVALUATION_RESULT.read_text(
-                encoding="utf-8"
-            )
+            EVALUATION_RESULT.read_text(encoding="utf-8")
         )
-
     except Exception:
         result = None
 
@@ -1070,11 +952,7 @@ def run_evaluation():
     if not (EVALUATION_DIR / "ground_truth.json").exists():
         raise HTTPException(
             status_code=400,
-            detail=(
-                "Evaluation benchmark not found. Add "
-                "evaluation/ground_truth.json and "
-                "recruiter_queries.json."
-            ),
+            detail="Evaluation benchmark not found: ground_truth.json is missing.",
         )
 
     if (
@@ -1083,9 +961,7 @@ def run_evaluation():
     ):
         raise HTTPException(
             status_code=400,
-            detail=(
-                "Run NLP and/or LLM processing before evaluation."
-            ),
+            detail="Run NLP and/or LLM processing before evaluation.",
         )
 
     job_id = create_job("evaluation")
@@ -1100,14 +976,12 @@ def run_evaluation():
     return {"job_id": job_id}
 
 
-# --------------------------------------------------
-# RESUME UPLOAD ENDPOINT
-# --------------------------------------------------
+# ==================================================
+# UPLOAD ENDPOINT
+# ==================================================
 
 @app.post("/api/upload")
-async def upload_resumes(
-    files: list[UploadFile] = File(...),
-):
+async def upload_resumes(files: list[UploadFile] = File(...)):
     items: list[tuple[str, bytes]] = []
 
     for upload in files:
@@ -1115,20 +989,15 @@ async def upload_resumes(
             continue
 
         raw = await upload.read()
+        await upload.close()
 
-        items.append((
-            upload.filename,
-            raw,
-        ))
+        if raw:
+            items.append((upload.filename, raw))
 
     try:
         payloads, warnings = collect_pdf_payloads(items)
-
     except ValueError as exc:
-        raise HTTPException(
-            status_code=413,
-            detail=str(exc),
-        )
+        raise HTTPException(status_code=413, detail=str(exc))
 
     if not payloads:
         raise HTTPException(
@@ -1140,19 +1009,24 @@ async def upload_resumes(
         )
 
     ingest_result = ingest_resumes(payloads)
+    manifest = load_manifest()
 
-    created = ingest_result["created"]
-    current_manifest = load_manifest()
+    records_to_convert = []
 
-    records_to_convert = (
-        created
-        if created
-        else [
-            item
-            for item in current_manifest
-            if item.get("markdown_status") != "success"
-        ]
-    )
+    for record in manifest:
+        app_no = record.get("application_no", "")
+        md_path = MD_DIR / f"{app_no}.md"
+        pdf_path = RESUME_DIR / record.get("stored_pdf", "")
+
+        if (
+            record.get("markdown_status") == "success"
+            and md_path.is_file()
+            and md_path.stat().st_size > 0
+        ):
+            continue
+
+        if pdf_path.is_file():
+            records_to_convert.append(record)
 
     job_id = (
         start_conversion(records_to_convert)
@@ -1162,7 +1036,7 @@ async def upload_resumes(
 
     return {
         "message": "Upload accepted.",
-        "created_count": len(created),
+        "created_count": len(ingest_result["created"]),
         "duplicate_count": len(ingest_result["duplicates"]),
         "duplicates": ingest_result["duplicates"],
         "warnings": warnings,
@@ -1171,34 +1045,103 @@ async def upload_resumes(
     }
 
 
-# --------------------------------------------------
+# ==================================================
 # CLEAR DATA ENDPOINT
-# --------------------------------------------------
+# ==================================================
+
+def clear_all_hirenex_data() -> dict[str, Any]:
+    removed = {
+        "pdf": 0,
+        "markdown": 0,
+        "output_files": 0,
+        "rag_output_files": 0,
+        "manifest": 0,
+        "rag_files": 0,
+    }
+
+    def clear_directory(directory: Path, key: str) -> None:
+        directory.mkdir(parents=True, exist_ok=True)
+
+        removed[key] = sum(
+            1 for item in directory.rglob("*") if item.is_file()
+        )
+
+        for child in list(directory.iterdir()):
+            if child.is_dir():
+                shutil.rmtree(child, ignore_errors=True)
+            else:
+                try:
+                    child.unlink()
+                except FileNotFoundError:
+                    pass
+
+    clear_directory(RESUME_DIR, "pdf")
+    clear_directory(MD_DIR, "markdown")
+    clear_directory(OUTPUT_DIR, "output_files")
+    clear_directory(RAG_OUTPUT_DIR, "rag_output_files")
+
+    if MANIFEST_PATH.exists():
+        MANIFEST_PATH.unlink()
+        removed["manifest"] = 1
+
+    try:
+        retrieval = importlib.import_module("retrival")
+        clear_index = getattr(retrieval, "clear_retrieval_index", None)
+
+        if callable(clear_index):
+            removed["rag_files"] = int(clear_index() or 0)
+
+    except Exception as exc:
+        removed["rag_clear_warning"] = str(exc)
+
+    # Preserve the Chroma directory unless retrival.py explicitly
+    # clears it through clear_retrieval_index().
+    for child in list(RAG_DIR.iterdir()):
+        if child.name == "chroma_db":
+            continue
+
+        if child.is_dir():
+            shutil.rmtree(child, ignore_errors=True)
+        else:
+            try:
+                child.unlink()
+            except FileNotFoundError:
+                pass
+
+    for directory in (
+        RESUME_DIR,
+        NLP_OUTPUT_DIR,
+        LLM_OUTPUT_DIR,
+        MD_DIR,
+        RAG_OUTPUT_DIR,
+        RAG_DIR,
+    ):
+        directory.mkdir(parents=True, exist_ok=True)
+
+    return removed
+
 
 @app.post("/api/data/clear")
 def clear_data():
     result = clear_all_hirenex_data()
 
     return {
-        "message": "All current HireNex dataset data was removed.",
+        "message": "Current HireNex dataset data was removed.",
         "details": result,
         "conversion": conversion_stats(),
     }
 
 
-# --------------------------------------------------
-# NLP PROCESSING ENDPOINT
-# --------------------------------------------------
+# ==================================================
+# NLP ENDPOINT
+# ==================================================
 
 @app.post("/api/process/nlp")
 def process_nlp():
     if not list(MD_DIR.glob("APP*.md")):
         raise HTTPException(
             status_code=400,
-            detail=(
-                "No Markdown resumes found. "
-                "Upload and convert resumes first."
-            ),
+            detail="No Markdown resumes found. Upload and convert resumes first.",
         )
 
     job_id = create_job("nlp")
@@ -1214,19 +1157,16 @@ def process_nlp():
     return {"job_id": job_id}
 
 
-# --------------------------------------------------
-# LLM PROCESSING ENDPOINT
-# --------------------------------------------------
+# ==================================================
+# LLM ENDPOINT
+# ==================================================
 
 @app.post("/api/process/llm")
 def process_llm():
     if not list(MD_DIR.glob("APP*.md")):
         raise HTTPException(
             status_code=400,
-            detail=(
-                "No Markdown resumes found. "
-                "Upload and convert resumes first."
-            ),
+            detail="No Markdown resumes found. Upload and convert resumes first.",
         )
 
     job_id = create_job("llm")
@@ -1242,84 +1182,70 @@ def process_llm():
     return {"job_id": job_id}
 
 
-# --------------------------------------------------
+# ==================================================
 # JOB STATUS ENDPOINT
-# --------------------------------------------------
+# ==================================================
 
 @app.get("/api/jobs/{job_id}")
 def job_status(job_id: str):
     job = get_job(job_id)
 
     if not job:
-        raise HTTPException(
-            status_code=404,
-            detail="Job not found",
-        )
+        raise HTTPException(status_code=404, detail="Job not found")
 
     return job
 
 
-# --------------------------------------------------
+# ==================================================
 # DOWNLOAD NLP / LLM OUTPUT
-# --------------------------------------------------
+# ==================================================
 
 @app.get("/api/download/{parser}/{filetype}")
-def download_parser_output(
-    parser: str,
-    filetype: str,
-):
+def download_parser_output(parser: str, filetype: str):
     mapping = {
         "nlp": NLP_OUTPUT_DIR,
         "llm": LLM_OUTPUT_DIR,
     }
 
     if parser not in mapping or filetype not in {"json", "xlsx"}:
-        raise HTTPException(
-            status_code=404,
-            detail="Output not found",
-        )
+        raise HTTPException(status_code=404, detail="Output not found")
 
-    path = locate_output_file(
-        mapping[parser],
-        filetype,
-    )
+    path = locate_output_file(mapping[parser], filetype)
 
-    if not path or not path.exists():
+    if not path or not path.is_file():
         raise HTTPException(
             status_code=404,
             detail="Output not generated yet",
         )
 
-    return FileResponse(
-        path=path,
-        filename=path.name,
-    )
+    return FileResponse(path=path, filename=path.name)
 
 
-# --------------------------------------------------
+# ==================================================
 # DOWNLOAD RAG OUTPUT
-# --------------------------------------------------
+# ==================================================
 
 @app.get("/api/download/rag/{filename}")
 def download_rag_output(filename: str):
-    safe = Path(filename).name
-    path = RAG_OUTPUT_DIR / safe
+    safe_name = Path(filename).name
 
-    if not path.exists() or path.suffix.lower() != ".xlsx":
+    if safe_name != filename:
+        raise HTTPException(status_code=400, detail="Invalid filename")
+
+    path = RAG_OUTPUT_DIR / safe_name
+
+    if not path.is_file() or path.suffix.lower() != ".xlsx":
         raise HTTPException(
             status_code=404,
             detail="Result file not found",
         )
 
-    return FileResponse(
-        path=path,
-        filename=path.name,
-    )
+    return FileResponse(path=path, filename=path.name)
 
 
-# --------------------------------------------------
-# CANDIDATE SEARCH ENDPOINT
-# --------------------------------------------------
+# ==================================================
+# CANDIDATE SEARCH
+# ==================================================
 
 @app.post("/api/search")
 def search_candidates(request: SearchRequest):
@@ -1340,32 +1266,32 @@ def search_candidates(request: SearchRequest):
             detail="Run NLP and/or LLM processing first.",
         )
 
-    retrieval = importlib.import_module("retrival")
+    try:
+        retrieval = importlib.import_module("retrival")
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Could not load retrieval module: {exc}",
+        )
 
-    function = getattr(
-        retrieval,
-        "search_candidates",
-        None,
-    )
+    function = getattr(retrieval, "search_candidates", None)
 
     if not callable(function):
         raise HTTPException(
             status_code=500,
-            detail=(
-                "retrival.py must expose search_candidates()."
-            ),
+            detail="retrival.py must expose search_candidates().",
         )
 
-    result = function(query)
-    result = json_safe(result)
-
-    excel_path = (
-        result.get("excel_path")
-        if isinstance(result, dict)
-        else None
-    )
+    try:
+        result = json_safe(function(query))
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Candidate search failed: {exc}",
+        )
 
     if isinstance(result, dict):
+        excel_path = result.get("excel_path")
         result["excel_url"] = None
 
         if excel_path:
