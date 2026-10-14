@@ -1,0 +1,3535 @@
+[
+  {
+    "application_no": "APP000001",
+    "name": "Aarav Menon",
+    "department": "CSE",
+    "email": "candidate001@example.com",
+    "phone": "+91-00000-10000",
+    "city": "Bengaluru",
+    "college": "Vellore Institute of Technology",
+    "degree": "B.Tech Computer Science and Engineering",
+    "graduation_year": 2020,
+    "cgpa": 7.16,
+    "experience_years": 0.3,
+    "experience_label": "0.3 years",
+    "primary_role": "Software Engineer",
+    "skills": [
+      "Python",
+      "Java",
+      "SQL",
+      "Git",
+      "Machine Learning",
+      "Pandas",
+      "Scikit-learn",
+      "Docker"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Candidate Screening Platform: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, Java, SQL, with testing and performance observations."
+    ],
+    "certifications": [
+      "AWS Cloud Practitioner"
+    ],
+    "achievements": [
+      "Top 10 in college hackathon"
+    ],
+    "summary": "Results-oriented technology professional with 0.3 years of experience across software development and data-driven applications.",
+    "source_filename": "APP000001_Aarav_Menon.pdf"
+  },
+  {
+    "application_no": "APP000002",
+    "name": "Ishita Rao",
+    "department": "CSE",
+    "email": "candidate002@example.com",
+    "phone": "+91-00000-10001",
+    "city": "Hyderabad",
+    "college": "SRM Institute of Science and Technology",
+    "degree": "B.E. Computer Science and Engineering",
+    "graduation_year": 2021,
+    "cgpa": 7.61,
+    "experience_years": 0.2,
+    "experience_label": "0.2 years",
+    "primary_role": "Machine Learning Engineer",
+    "skills": [
+      "Java",
+      "C++",
+      "Data Structures",
+      "Algorithms",
+      "Spring Boot",
+      "MySQL",
+      "Git"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Demand Forecasting Dashboard: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Java, C++, Data Structures, with testing and performance observations."
+    ],
+    "certifications": [
+      "Google Data Analytics Certificate"
+    ],
+    "achievements": [
+      "Solved 350+ DSA problems"
+    ],
+    "summary": "Computer science graduate focused on building reliable software systems, APIs, and machine learning solutions.",
+    "source_filename": "APP000002_Ishita_Rao.pdf"
+  },
+  {
+    "application_no": "APP000003",
+    "name": "Rohan Iyer",
+    "department": "CSE",
+    "email": "candidate003@example.com",
+    "phone": "+91-00000-10002",
+    "city": "Chennai",
+    "college": "Amrita Vishwa Vidyapeetham",
+    "degree": "B.Tech CSE (AI & ML)",
+    "graduation_year": 2022,
+    "cgpa": 8.66,
+    "experience_years": 1.6,
+    "experience_label": "1.6 years",
+    "primary_role": "Backend Developer",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "REST APIs",
+      "Docker"
+    ],
+    "experience": [
+      "Backend Developer | TechWorks Engineering, Chennai | 2023-2024",
+      "Worked on e-commerce recommendation engine, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "E-commerce Recommendation Engine: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, FastAPI, React, with testing and performance observations."
+    ],
+    "certifications": [
+      "Machine Learning Specialization"
+    ],
+    "achievements": [
+      "Led a 4-member capstone team"
+    ],
+    "summary": "AI/ML-oriented engineer with hands-on experience in Python, data processing, and production-oriented application development.",
+    "source_filename": "APP000003_Rohan_Iyer.pdf"
+  },
+  {
+    "application_no": "APP000004",
+    "name": "Ananya Nair",
+    "department": "CSE",
+    "email": "candidate004@example.com",
+    "phone": "+91-00000-10003",
+    "city": "Pune",
+    "college": "PSG College of Technology",
+    "degree": "B.Tech Computer Science and Engineering",
+    "graduation_year": 2023,
+    "cgpa": 7.3,
+    "experience_years": 3.2,
+    "experience_label": "3.2 years",
+    "primary_role": "Data Analyst",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "NLP",
+      "Transformers",
+      "SQL",
+      "Linux"
+    ],
+    "experience": [
+      "Data Analyst | TechWorks Engineering, Pune | 2024-2027",
+      "Worked on network intrusion detection system, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Network Intrusion Detection System: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, TensorFlow, PyTorch, with testing and performance observations."
+    ],
+    "certifications": [
+      "Java Programming Certificate"
+    ],
+    "achievements": [
+      "Published a student technical article"
+    ],
+    "summary": "Results-oriented technology professional with 3.2 years of experience across software development and data-driven applications.",
+    "source_filename": "APP000004_Ananya_Nair.pdf"
+  },
+  {
+    "application_no": "APP000005",
+    "name": "Vivek Reddy",
+    "department": "CSE",
+    "email": "candidate005@example.com",
+    "phone": "+91-00000-10004",
+    "city": "Kochi",
+    "college": "NIT Warangal",
+    "degree": "B.E. Computer Science and Engineering",
+    "graduation_year": 2024,
+    "cgpa": 7.17,
+    "experience_years": 3.8,
+    "experience_label": "3.8 years",
+    "primary_role": "AI Engineer",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "AWS",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "Kubernetes"
+    ],
+    "experience": [
+      "AI Engineer | TechWorks Engineering, Kochi | 2025-2028",
+      "Worked on rag-based support assistant, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "RAG-based Support Assistant: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Java, Spring Boot, AWS, with testing and performance observations."
+    ],
+    "certifications": [
+      "SQL for Data Science"
+    ],
+    "achievements": [
+      "Won an inter-college coding contest"
+    ],
+    "summary": "Computer science graduate focused on building reliable software systems, APIs, and machine learning solutions.",
+    "source_filename": "APP000005_Vivek_Reddy.pdf"
+  },
+  {
+    "application_no": "APP000006",
+    "name": "Meera Krishnan",
+    "department": "CSE",
+    "email": "candidate006@example.com",
+    "phone": "+91-00000-10005",
+    "city": "Amaravati",
+    "college": "IIIT Hyderabad",
+    "degree": "B.Tech CSE (AI & ML)",
+    "graduation_year": 2025,
+    "cgpa": 8.26,
+    "experience_years": 5.5,
+    "experience_label": "5.5 years",
+    "primary_role": "Full Stack Developer",
+    "skills": [
+      "Python",
+      "Computer Vision",
+      "OpenCV",
+      "CNN",
+      "TensorFlow",
+      "NumPy",
+      "Pandas",
+      "Docker"
+    ],
+    "experience": [
+      "Full Stack Developer | TechWorks Engineering, Amaravati | 2026-2031",
+      "Worked on vision-based defect detection, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Vision-based Defect Detection: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, Computer Vision, OpenCV, with testing and performance observations."
+    ],
+    "certifications": [
+      "AWS Cloud Practitioner"
+    ],
+    "achievements": [
+      "Top 10 in college hackathon"
+    ],
+    "summary": "AI/ML-oriented engineer with hands-on experience in Python, data processing, and production-oriented application development.",
+    "source_filename": "APP000006_Meera_Krishnan.pdf"
+  },
+  {
+    "application_no": "APP000007",
+    "name": "Arjun Varma",
+    "department": "CSE",
+    "email": "candidate007@example.com",
+    "phone": "+91-00000-10006",
+    "city": "Coimbatore",
+    "college": "KL University",
+    "degree": "B.Tech Computer Science and Engineering",
+    "graduation_year": 2026,
+    "cgpa": 7.56,
+    "experience_years": 0.0,
+    "experience_label": "Fresher",
+    "primary_role": "Software Engineer",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "AWS"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Candidate Screening Platform: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using JavaScript, TypeScript, React, with testing and performance observations."
+    ],
+    "certifications": [
+      "Google Data Analytics Certificate"
+    ],
+    "achievements": [
+      "Solved 350+ DSA problems"
+    ],
+    "summary": "Results-oriented technology professional with fresher of experience across software development and data-driven applications.",
+    "source_filename": "APP000007_Arjun_Varma.pdf"
+  },
+  {
+    "application_no": "APP000008",
+    "name": "Diya Pillai",
+    "department": "CSE",
+    "email": "candidate008@example.com",
+    "phone": "+91-00000-10007",
+    "city": "Mysuru",
+    "college": "R.V. College of Engineering",
+    "degree": "B.E. Computer Science and Engineering",
+    "graduation_year": 2020,
+    "cgpa": 8.35,
+    "experience_years": 0.6,
+    "experience_label": "0.6 years",
+    "primary_role": "Machine Learning Engineer",
+    "skills": [
+      "Python",
+      "RAG",
+      "LangChain",
+      "ChromaDB",
+      "LLMs",
+      "FastAPI",
+      "Git"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Demand Forecasting Dashboard: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, RAG, LangChain, with testing and performance observations."
+    ],
+    "certifications": [
+      "Machine Learning Specialization"
+    ],
+    "achievements": [
+      "Led a 4-member capstone team"
+    ],
+    "summary": "Computer science graduate focused on building reliable software systems, APIs, and machine learning solutions.",
+    "source_filename": "APP000008_Diya_Pillai.pdf"
+  },
+  {
+    "application_no": "APP000009",
+    "name": "Karthik Rao",
+    "department": "CSE",
+    "email": "candidate009@example.com",
+    "phone": "+91-00000-10008",
+    "city": "Visakhapatnam",
+    "college": "Sathyabama Institute of Science and Technology",
+    "degree": "B.Tech CSE (AI & ML)",
+    "graduation_year": 2021,
+    "cgpa": 8.46,
+    "experience_years": 1.2,
+    "experience_label": "1.2 years",
+    "primary_role": "Backend Developer",
+    "skills": [
+      "Python",
+      "Java",
+      "SQL",
+      "Git",
+      "Machine Learning",
+      "Pandas",
+      "Scikit-learn"
+    ],
+    "experience": [
+      "Backend Developer | TechWorks Engineering, Visakhapatnam | 2022-2023",
+      "Worked on e-commerce recommendation engine, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "E-commerce Recommendation Engine: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, Java, SQL, with testing and performance observations."
+    ],
+    "certifications": [
+      "Java Programming Certificate"
+    ],
+    "achievements": [
+      "Published a student technical article"
+    ],
+    "summary": "AI/ML-oriented engineer with hands-on experience in Python, data processing, and production-oriented application development.",
+    "source_filename": "APP000009_Karthik_Rao.pdf"
+  },
+  {
+    "application_no": "APP000010",
+    "name": "Sneha Nair",
+    "department": "CSE",
+    "email": "candidate010@example.com",
+    "phone": "+91-00000-10009",
+    "city": "Vijayawada",
+    "college": "BMS College of Engineering",
+    "degree": "B.Tech Computer Science and Engineering",
+    "graduation_year": 2022,
+    "cgpa": 7.11,
+    "experience_years": 3.1,
+    "experience_label": "3.1 years",
+    "primary_role": "Data Analyst",
+    "skills": [
+      "Java",
+      "C++",
+      "Data Structures",
+      "Algorithms",
+      "Spring Boot",
+      "MySQL",
+      "Git"
+    ],
+    "experience": [
+      "Data Analyst | TechWorks Engineering, Vijayawada | 2023-2026",
+      "Worked on network intrusion detection system, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Network Intrusion Detection System: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Java, C++, Data Structures, with testing and performance observations."
+    ],
+    "certifications": [
+      "SQL for Data Science"
+    ],
+    "achievements": [
+      "Won an inter-college coding contest"
+    ],
+    "summary": "Results-oriented technology professional with 3.1 years of experience across software development and data-driven applications.",
+    "source_filename": "APP000010_Sneha_Nair.pdf"
+  },
+  {
+    "application_no": "APP000011",
+    "name": "Aditya Kumar",
+    "department": "CSE",
+    "email": "candidate011@example.com",
+    "phone": "+91-00000-10010",
+    "city": "Bengaluru",
+    "college": "Vellore Institute of Technology",
+    "degree": "B.E. Computer Science and Engineering",
+    "graduation_year": 2023,
+    "cgpa": 8.71,
+    "experience_years": 4.5,
+    "experience_label": "4.5 years",
+    "primary_role": "AI Engineer",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "REST APIs",
+      "Docker"
+    ],
+    "experience": [
+      "AI Engineer | TechWorks Engineering, Bengaluru | 2024-2028",
+      "Worked on rag-based support assistant, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "RAG-based Support Assistant: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, FastAPI, React, with testing and performance observations."
+    ],
+    "certifications": [
+      "AWS Cloud Practitioner"
+    ],
+    "achievements": [
+      "Top 10 in college hackathon"
+    ],
+    "summary": "Computer science graduate focused on building reliable software systems, APIs, and machine learning solutions.",
+    "source_filename": "APP000011_Aditya_Kumar.pdf"
+  },
+  {
+    "application_no": "APP000012",
+    "name": "Nandini Shah",
+    "department": "CSE",
+    "email": "candidate012@example.com",
+    "phone": "+91-00000-10011",
+    "city": "Hyderabad",
+    "college": "SRM Institute of Science and Technology",
+    "degree": "B.Tech CSE (AI & ML)",
+    "graduation_year": 2024,
+    "cgpa": 7.46,
+    "experience_years": 5.9,
+    "experience_label": "5.9 years",
+    "primary_role": "Full Stack Developer",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "NLP",
+      "Transformers",
+      "SQL",
+      "Linux"
+    ],
+    "experience": [
+      "Full Stack Developer | TechWorks Engineering, Hyderabad | 2025-2030",
+      "Worked on vision-based defect detection, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Vision-based Defect Detection: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, TensorFlow, PyTorch, with testing and performance observations."
+    ],
+    "certifications": [
+      "Google Data Analytics Certificate"
+    ],
+    "achievements": [
+      "Solved 350+ DSA problems"
+    ],
+    "summary": "AI/ML-oriented engineer with hands-on experience in Python, data processing, and production-oriented application development.",
+    "source_filename": "APP000012_Nandini_Shah.pdf"
+  },
+  {
+    "application_no": "APP000013",
+    "name": "Rahul Das",
+    "department": "CSE",
+    "email": "candidate013@example.com",
+    "phone": "+91-00000-10012",
+    "city": "Chennai",
+    "college": "Amrita Vishwa Vidyapeetham",
+    "degree": "B.Tech Computer Science and Engineering",
+    "graduation_year": 2025,
+    "cgpa": 7.87,
+    "experience_years": 0.5,
+    "experience_label": "0.5 years",
+    "primary_role": "Software Engineer",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "AWS",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "Kubernetes"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Candidate Screening Platform: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Java, Spring Boot, AWS, with testing and performance observations."
+    ],
+    "certifications": [
+      "Machine Learning Specialization"
+    ],
+    "achievements": [
+      "Led a 4-member capstone team"
+    ],
+    "summary": "Results-oriented technology professional with 0.5 years of experience across software development and data-driven applications.",
+    "source_filename": "APP000013_Rahul_Das.pdf"
+  },
+  {
+    "application_no": "APP000014",
+    "name": "Priya Menon",
+    "department": "CSE",
+    "email": "candidate014@example.com",
+    "phone": "+91-00000-10013",
+    "city": "Pune",
+    "college": "PSG College of Technology",
+    "degree": "B.E. Computer Science and Engineering",
+    "graduation_year": 2026,
+    "cgpa": 7.32,
+    "experience_years": 0.1,
+    "experience_label": "Fresher",
+    "primary_role": "Machine Learning Engineer",
+    "skills": [
+      "Python",
+      "Computer Vision",
+      "OpenCV",
+      "CNN",
+      "TensorFlow",
+      "NumPy",
+      "Pandas"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Demand Forecasting Dashboard: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, Computer Vision, OpenCV, with testing and performance observations."
+    ],
+    "certifications": [
+      "Java Programming Certificate"
+    ],
+    "achievements": [
+      "Published a student technical article"
+    ],
+    "summary": "Computer science graduate focused on building reliable software systems, APIs, and machine learning solutions.",
+    "source_filename": "APP000014_Priya_Menon.pdf"
+  },
+  {
+    "application_no": "APP000015",
+    "name": "Siddharth Iyer",
+    "department": "CSE",
+    "email": "candidate015@example.com",
+    "phone": "+91-00000-10014",
+    "city": "Kochi",
+    "college": "NIT Warangal",
+    "degree": "B.Tech CSE (AI & ML)",
+    "graduation_year": 2020,
+    "cgpa": 8.49,
+    "experience_years": 1.7,
+    "experience_label": "1.7 years",
+    "primary_role": "Backend Developer",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "AWS"
+    ],
+    "experience": [
+      "Backend Developer | TechWorks Engineering, Kochi | 2021-2022",
+      "Worked on e-commerce recommendation engine, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "E-commerce Recommendation Engine: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using JavaScript, TypeScript, React, with testing and performance observations."
+    ],
+    "certifications": [
+      "SQL for Data Science"
+    ],
+    "achievements": [
+      "Won an inter-college coding contest"
+    ],
+    "summary": "AI/ML-oriented engineer with hands-on experience in Python, data processing, and production-oriented application development.",
+    "source_filename": "APP000015_Siddharth_Iyer.pdf"
+  },
+  {
+    "application_no": "APP000016",
+    "name": "Keerthana Reddy",
+    "department": "CSE",
+    "email": "candidate016@example.com",
+    "phone": "+91-00000-10015",
+    "city": "Amaravati",
+    "college": "IIIT Hyderabad",
+    "degree": "B.Tech Computer Science and Engineering",
+    "graduation_year": 2021,
+    "cgpa": 8.78,
+    "experience_years": 3.1,
+    "experience_label": "3.1 years",
+    "primary_role": "Data Analyst",
+    "skills": [
+      "Python",
+      "RAG",
+      "LangChain",
+      "ChromaDB",
+      "LLMs",
+      "FastAPI",
+      "Git",
+      "Docker"
+    ],
+    "experience": [
+      "Data Analyst | TechWorks Engineering, Amaravati | 2022-2025",
+      "Worked on network intrusion detection system, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Network Intrusion Detection System: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, RAG, LangChain, with testing and performance observations."
+    ],
+    "certifications": [
+      "AWS Cloud Practitioner"
+    ],
+    "achievements": [
+      "Top 10 in college hackathon"
+    ],
+    "summary": "Results-oriented technology professional with 3.1 years of experience across software development and data-driven applications.",
+    "source_filename": "APP000016_Keerthana_Reddy.pdf"
+  },
+  {
+    "application_no": "APP000017",
+    "name": "Manish Jain",
+    "department": "CSE",
+    "email": "candidate017@example.com",
+    "phone": "+91-00000-10016",
+    "city": "Coimbatore",
+    "college": "KL University",
+    "degree": "B.E. Computer Science and Engineering",
+    "graduation_year": 2022,
+    "cgpa": 9.34,
+    "experience_years": 4.0,
+    "experience_label": "4 years",
+    "primary_role": "AI Engineer",
+    "skills": [
+      "Python",
+      "Java",
+      "SQL",
+      "Git",
+      "Machine Learning",
+      "Pandas",
+      "Scikit-learn"
+    ],
+    "experience": [
+      "AI Engineer | TechWorks Engineering, Coimbatore | 2023-2027",
+      "Worked on rag-based support assistant, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "RAG-based Support Assistant: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, Java, SQL, with testing and performance observations."
+    ],
+    "certifications": [
+      "Google Data Analytics Certificate"
+    ],
+    "achievements": [
+      "Solved 350+ DSA problems"
+    ],
+    "summary": "Computer science graduate focused on building reliable software systems, APIs, and machine learning solutions.",
+    "source_filename": "APP000017_Manish_Jain.pdf"
+  },
+  {
+    "application_no": "APP000018",
+    "name": "Aditi Kapoor",
+    "department": "CSE",
+    "email": "candidate018@example.com",
+    "phone": "+91-00000-10017",
+    "city": "Mysuru",
+    "college": "R.V. College of Engineering",
+    "degree": "B.Tech CSE (AI & ML)",
+    "graduation_year": 2023,
+    "cgpa": 8.37,
+    "experience_years": 5.9,
+    "experience_label": "5.9 years",
+    "primary_role": "Full Stack Developer",
+    "skills": [
+      "Java",
+      "C++",
+      "Data Structures",
+      "Algorithms",
+      "Spring Boot",
+      "MySQL",
+      "Git"
+    ],
+    "experience": [
+      "Full Stack Developer | TechWorks Engineering, Mysuru | 2024-2029",
+      "Worked on vision-based defect detection, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Vision-based Defect Detection: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Java, C++, Data Structures, with testing and performance observations."
+    ],
+    "certifications": [
+      "Machine Learning Specialization"
+    ],
+    "achievements": [
+      "Led a 4-member capstone team"
+    ],
+    "summary": "AI/ML-oriented engineer with hands-on experience in Python, data processing, and production-oriented application development.",
+    "source_filename": "APP000018_Aditi_Kapoor.pdf"
+  },
+  {
+    "application_no": "APP000019",
+    "name": "Harsh Venkatesh",
+    "department": "CSE",
+    "email": "candidate019@example.com",
+    "phone": "+91-00000-10018",
+    "city": "Visakhapatnam",
+    "college": "Sathyabama Institute of Science and Technology",
+    "degree": "B.Tech Computer Science and Engineering",
+    "graduation_year": 2024,
+    "cgpa": 8.52,
+    "experience_years": 0.4,
+    "experience_label": "0.4 years",
+    "primary_role": "Software Engineer",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "REST APIs",
+      "Docker"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Candidate Screening Platform: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, FastAPI, React, with testing and performance observations."
+    ],
+    "certifications": [
+      "Java Programming Certificate"
+    ],
+    "achievements": [
+      "Published a student technical article"
+    ],
+    "summary": "Results-oriented technology professional with 0.4 years of experience across software development and data-driven applications.",
+    "source_filename": "APP000019_Harsh_Venkatesh.pdf"
+  },
+  {
+    "application_no": "APP000020",
+    "name": "Lakshmi Nair",
+    "department": "CSE",
+    "email": "candidate020@example.com",
+    "phone": "+91-00000-10019",
+    "city": "Vijayawada",
+    "college": "BMS College of Engineering",
+    "degree": "B.E. Computer Science and Engineering",
+    "graduation_year": 2025,
+    "cgpa": 8.43,
+    "experience_years": 0.8,
+    "experience_label": "0.8 years",
+    "primary_role": "Machine Learning Engineer",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "NLP",
+      "Transformers",
+      "SQL",
+      "Linux"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Demand Forecasting Dashboard: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, TensorFlow, PyTorch, with testing and performance observations."
+    ],
+    "certifications": [
+      "SQL for Data Science"
+    ],
+    "achievements": [
+      "Won an inter-college coding contest"
+    ],
+    "summary": "Computer science graduate focused on building reliable software systems, APIs, and machine learning solutions.",
+    "source_filename": "APP000020_Lakshmi_Nair.pdf"
+  },
+  {
+    "application_no": "APP000021",
+    "name": "Nikhil Rao",
+    "department": "CSE",
+    "email": "candidate021@example.com",
+    "phone": "+91-00000-10020",
+    "city": "Bengaluru",
+    "college": "Vellore Institute of Technology",
+    "degree": "B.Tech CSE (AI & ML)",
+    "graduation_year": 2026,
+    "cgpa": 7.21,
+    "experience_years": 1.6,
+    "experience_label": "1.6 years",
+    "primary_role": "Backend Developer",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "AWS",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "Kubernetes"
+    ],
+    "experience": [
+      "Backend Developer | TechWorks Engineering, Bengaluru | 2027-2028",
+      "Worked on e-commerce recommendation engine, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "E-commerce Recommendation Engine: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Java, Spring Boot, AWS, with testing and performance observations."
+    ],
+    "certifications": [
+      "AWS Cloud Practitioner"
+    ],
+    "achievements": [
+      "Top 10 in college hackathon"
+    ],
+    "summary": "AI/ML-oriented engineer with hands-on experience in Python, data processing, and production-oriented application development.",
+    "source_filename": "APP000021_Nikhil_Rao.pdf"
+  },
+  {
+    "application_no": "APP000022",
+    "name": "Pooja Iyer",
+    "department": "CSE",
+    "email": "candidate022@example.com",
+    "phone": "+91-00000-10021",
+    "city": "Hyderabad",
+    "college": "SRM Institute of Science and Technology",
+    "degree": "B.Tech Computer Science and Engineering",
+    "graduation_year": 2020,
+    "cgpa": 7.77,
+    "experience_years": 2.3,
+    "experience_label": "2.3 years",
+    "primary_role": "Data Analyst",
+    "skills": [
+      "Python",
+      "Computer Vision",
+      "OpenCV",
+      "CNN",
+      "TensorFlow",
+      "NumPy",
+      "Pandas"
+    ],
+    "experience": [
+      "Data Analyst | TechWorks Engineering, Hyderabad | 2021-2023",
+      "Worked on network intrusion detection system, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Network Intrusion Detection System: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, Computer Vision, OpenCV, with testing and performance observations."
+    ],
+    "certifications": [
+      "Google Data Analytics Certificate"
+    ],
+    "achievements": [
+      "Solved 350+ DSA problems"
+    ],
+    "summary": "Results-oriented technology professional with 2.3 years of experience across software development and data-driven applications.",
+    "source_filename": "APP000022_Pooja_Iyer.pdf"
+  },
+  {
+    "application_no": "APP000023",
+    "name": "Varun Menon",
+    "department": "CSE",
+    "email": "candidate023@example.com",
+    "phone": "+91-00000-10022",
+    "city": "Chennai",
+    "college": "Amrita Vishwa Vidyapeetham",
+    "degree": "B.E. Computer Science and Engineering",
+    "graduation_year": 2021,
+    "cgpa": 7.64,
+    "experience_years": 3.1,
+    "experience_label": "3.1 years",
+    "primary_role": "AI Engineer",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "AWS"
+    ],
+    "experience": [
+      "AI Engineer | TechWorks Engineering, Chennai | 2022-2025",
+      "Worked on rag-based support assistant, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "RAG-based Support Assistant: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using JavaScript, TypeScript, React, with testing and performance observations."
+    ],
+    "certifications": [
+      "Machine Learning Specialization"
+    ],
+    "achievements": [
+      "Led a 4-member capstone team"
+    ],
+    "summary": "Computer science graduate focused on building reliable software systems, APIs, and machine learning solutions.",
+    "source_filename": "APP000023_Varun_Menon.pdf"
+  },
+  {
+    "application_no": "APP000024",
+    "name": "Shreya Das",
+    "department": "CSE",
+    "email": "candidate024@example.com",
+    "phone": "+91-00000-10023",
+    "city": "Pune",
+    "college": "PSG College of Technology",
+    "degree": "B.Tech CSE (AI & ML)",
+    "graduation_year": 2022,
+    "cgpa": 7.74,
+    "experience_years": 5.3,
+    "experience_label": "5.3 years",
+    "primary_role": "Full Stack Developer",
+    "skills": [
+      "Python",
+      "RAG",
+      "LangChain",
+      "ChromaDB",
+      "LLMs",
+      "FastAPI",
+      "Git"
+    ],
+    "experience": [
+      "Full Stack Developer | TechWorks Engineering, Pune | 2023-2028",
+      "Worked on vision-based defect detection, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Vision-based Defect Detection: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, RAG, LangChain, with testing and performance observations."
+    ],
+    "certifications": [
+      "Java Programming Certificate"
+    ],
+    "achievements": [
+      "Published a student technical article"
+    ],
+    "summary": "AI/ML-oriented engineer with hands-on experience in Python, data processing, and production-oriented application development.",
+    "source_filename": "APP000024_Shreya_Das.pdf"
+  },
+  {
+    "application_no": "APP000025",
+    "name": "Akshay Pillai",
+    "department": "CSE",
+    "email": "candidate025@example.com",
+    "phone": "+91-00000-10024",
+    "city": "Kochi",
+    "college": "NIT Warangal",
+    "degree": "B.Tech Computer Science and Engineering",
+    "graduation_year": 2023,
+    "cgpa": 7.94,
+    "experience_years": 0.3,
+    "experience_label": "0.3 years",
+    "primary_role": "Software Engineer",
+    "skills": [
+      "Python",
+      "Java",
+      "SQL",
+      "Git",
+      "Machine Learning",
+      "Pandas",
+      "Scikit-learn"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Candidate Screening Platform: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, Java, SQL, with testing and performance observations."
+    ],
+    "certifications": [
+      "SQL for Data Science"
+    ],
+    "achievements": [
+      "Won an inter-college coding contest"
+    ],
+    "summary": "Results-oriented technology professional with 0.3 years of experience across software development and data-driven applications.",
+    "source_filename": "APP000025_Akshay_Pillai.pdf"
+  },
+  {
+    "application_no": "APP000026",
+    "name": "Tanvi Reddy",
+    "department": "CSE",
+    "email": "candidate026@example.com",
+    "phone": "+91-00000-10025",
+    "city": "Amaravati",
+    "college": "IIIT Hyderabad",
+    "degree": "B.E. Computer Science and Engineering",
+    "graduation_year": 2024,
+    "cgpa": 7.58,
+    "experience_years": 0.3,
+    "experience_label": "0.3 years",
+    "primary_role": "Machine Learning Engineer",
+    "skills": [
+      "Java",
+      "C++",
+      "Data Structures",
+      "Algorithms",
+      "Spring Boot",
+      "MySQL",
+      "Git",
+      "Docker"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Demand Forecasting Dashboard: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Java, C++, Data Structures, with testing and performance observations."
+    ],
+    "certifications": [
+      "AWS Cloud Practitioner"
+    ],
+    "achievements": [
+      "Top 10 in college hackathon"
+    ],
+    "summary": "Computer science graduate focused on building reliable software systems, APIs, and machine learning solutions.",
+    "source_filename": "APP000026_Tanvi_Reddy.pdf"
+  },
+  {
+    "application_no": "APP000027",
+    "name": "Yash Kumar",
+    "department": "CSE",
+    "email": "candidate027@example.com",
+    "phone": "+91-00000-10026",
+    "city": "Coimbatore",
+    "college": "KL University",
+    "degree": "B.Tech CSE (AI & ML)",
+    "graduation_year": 2025,
+    "cgpa": 9.25,
+    "experience_years": 1.2,
+    "experience_label": "1.2 years",
+    "primary_role": "Backend Developer",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "REST APIs",
+      "Docker"
+    ],
+    "experience": [
+      "Backend Developer | TechWorks Engineering, Coimbatore | 2026-2027",
+      "Worked on e-commerce recommendation engine, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "E-commerce Recommendation Engine: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, FastAPI, React, with testing and performance observations."
+    ],
+    "certifications": [
+      "Google Data Analytics Certificate"
+    ],
+    "achievements": [
+      "Solved 350+ DSA problems"
+    ],
+    "summary": "AI/ML-oriented engineer with hands-on experience in Python, data processing, and production-oriented application development.",
+    "source_filename": "APP000027_Yash_Kumar.pdf"
+  },
+  {
+    "application_no": "APP000028",
+    "name": "Maya Krishnan",
+    "department": "CSE",
+    "email": "candidate028@example.com",
+    "phone": "+91-00000-10027",
+    "city": "Mysuru",
+    "college": "R.V. College of Engineering",
+    "degree": "B.Tech Computer Science and Engineering",
+    "graduation_year": 2026,
+    "cgpa": 8.5,
+    "experience_years": 2.9,
+    "experience_label": "2.9 years",
+    "primary_role": "Data Analyst",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "NLP",
+      "Transformers",
+      "SQL",
+      "Linux"
+    ],
+    "experience": [
+      "Data Analyst | TechWorks Engineering, Mysuru | 2027-2029",
+      "Worked on network intrusion detection system, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Network Intrusion Detection System: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, TensorFlow, PyTorch, with testing and performance observations."
+    ],
+    "certifications": [
+      "Machine Learning Specialization"
+    ],
+    "achievements": [
+      "Led a 4-member capstone team"
+    ],
+    "summary": "Results-oriented technology professional with 2.9 years of experience across software development and data-driven applications.",
+    "source_filename": "APP000028_Maya_Krishnan.pdf"
+  },
+  {
+    "application_no": "APP000029",
+    "name": "Ritvik Shah",
+    "department": "CSE",
+    "email": "candidate029@example.com",
+    "phone": "+91-00000-10028",
+    "city": "Visakhapatnam",
+    "college": "Sathyabama Institute of Science and Technology",
+    "degree": "B.E. Computer Science and Engineering",
+    "graduation_year": 2020,
+    "cgpa": 8.78,
+    "experience_years": 3.3,
+    "experience_label": "3.3 years",
+    "primary_role": "AI Engineer",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "AWS",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "Kubernetes"
+    ],
+    "experience": [
+      "AI Engineer | TechWorks Engineering, Visakhapatnam | 2021-2024",
+      "Worked on rag-based support assistant, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "RAG-based Support Assistant: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Java, Spring Boot, AWS, with testing and performance observations."
+    ],
+    "certifications": [
+      "Java Programming Certificate"
+    ],
+    "achievements": [
+      "Published a student technical article"
+    ],
+    "summary": "Computer science graduate focused on building reliable software systems, APIs, and machine learning solutions.",
+    "source_filename": "APP000029_Ritvik_Shah.pdf"
+  },
+  {
+    "application_no": "APP000030",
+    "name": "Neha Varma",
+    "department": "CSE",
+    "email": "candidate030@example.com",
+    "phone": "+91-00000-10029",
+    "city": "Vijayawada",
+    "college": "BMS College of Engineering",
+    "degree": "B.Tech CSE (AI & ML)",
+    "graduation_year": 2021,
+    "cgpa": 7.97,
+    "experience_years": 5.4,
+    "experience_label": "5.4 years",
+    "primary_role": "Full Stack Developer",
+    "skills": [
+      "Python",
+      "Computer Vision",
+      "OpenCV",
+      "CNN",
+      "TensorFlow",
+      "NumPy",
+      "Pandas"
+    ],
+    "experience": [
+      "Full Stack Developer | TechWorks Engineering, Vijayawada | 2022-2027",
+      "Worked on vision-based defect detection, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Vision-based Defect Detection: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, Computer Vision, OpenCV, with testing and performance observations."
+    ],
+    "certifications": [
+      "SQL for Data Science"
+    ],
+    "achievements": [
+      "Won an inter-college coding contest"
+    ],
+    "summary": "AI/ML-oriented engineer with hands-on experience in Python, data processing, and production-oriented application development.",
+    "source_filename": "APP000030_Neha_Varma.pdf"
+  },
+  {
+    "application_no": "APP000031",
+    "name": "Dev Nair",
+    "department": "ECE",
+    "email": "candidate031@example.com",
+    "phone": "+91-00000-10030",
+    "city": "Bengaluru",
+    "college": "Vellore Institute of Technology",
+    "degree": "B.Tech Electronics and Communication Engineering",
+    "graduation_year": 2022,
+    "cgpa": 8.57,
+    "experience_years": 0.5,
+    "experience_label": "0.5 years",
+    "primary_role": "Embedded Engineer",
+    "skills": [
+      "Embedded C",
+      "C",
+      "Arduino",
+      "ESP32",
+      "UART",
+      "SPI",
+      "I2C",
+      "Python"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Smart Factory Monitoring Node: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Embedded C, C, Arduino, with testing and performance observations."
+    ],
+    "certifications": [
+      "Embedded Systems Certificate"
+    ],
+    "achievements": [
+      "Won a robotics competition"
+    ],
+    "summary": "Electronics professional with 0.5 years of experience in embedded systems, hardware testing, and connected devices.",
+    "source_filename": "APP000031_Dev_Nair.pdf"
+  },
+  {
+    "application_no": "APP000032",
+    "name": "Riya Menon",
+    "department": "ECE",
+    "email": "candidate032@example.com",
+    "phone": "+91-00000-10031",
+    "city": "Hyderabad",
+    "college": "SRM Institute of Science and Technology",
+    "degree": "B.E. Electronics and Communication Engineering",
+    "graduation_year": 2023,
+    "cgpa": 8.67,
+    "experience_years": 0.5,
+    "experience_label": "0.5 years",
+    "primary_role": "Electronics Engineer",
+    "skills": [
+      "Verilog",
+      "SystemVerilog",
+      "FPGA",
+      "RTL Design",
+      "VHDL",
+      "Digital Electronics"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "FPGA-based Signal Processing Module: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Verilog, SystemVerilog, FPGA, with testing and performance observations."
+    ],
+    "certifications": [
+      "MATLAB Onramp"
+    ],
+    "achievements": [
+      "Built a 4-layer PCB prototype"
+    ],
+    "summary": "ECE graduate experienced in digital electronics, firmware development, and sensor-based prototypes.",
+    "source_filename": "APP000032_Riya_Menon.pdf"
+  },
+  {
+    "application_no": "APP000033",
+    "name": "Abhinav Rao",
+    "department": "ECE",
+    "email": "candidate033@example.com",
+    "phone": "+91-00000-10032",
+    "city": "Chennai",
+    "college": "Amrita Vishwa Vidyapeetham",
+    "degree": "B.Tech Electronics Engineering",
+    "graduation_year": 2024,
+    "cgpa": 8.88,
+    "experience_years": 1.7,
+    "experience_label": "1.7 years",
+    "primary_role": "Firmware Engineer",
+    "skills": [
+      "MATLAB",
+      "Simulink",
+      "Signal Processing",
+      "Python",
+      "DSP",
+      "Control Systems"
+    ],
+    "experience": [
+      "Firmware Engineer | TechWorks Engineering, Chennai | 2025-2026",
+      "Worked on iot air quality monitor, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "IoT Air Quality Monitor: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using MATLAB, Simulink, Signal Processing, with testing and performance observations."
+    ],
+    "certifications": [
+      "FPGA Design Fundamentals"
+    ],
+    "achievements": [
+      "Presented at a student research symposium"
+    ],
+    "summary": "Embedded and IoT engineer with practical work in microcontrollers, communication protocols, and edge devices.",
+    "source_filename": "APP000033_Abhinav_Rao.pdf"
+  },
+  {
+    "application_no": "APP000034",
+    "name": "Kavya Iyer",
+    "department": "ECE",
+    "email": "candidate034@example.com",
+    "phone": "+91-00000-10033",
+    "city": "Pune",
+    "college": "PSG College of Technology",
+    "degree": "B.Tech Electronics and Communication Engineering",
+    "graduation_year": 2025,
+    "cgpa": 7.17,
+    "experience_years": 2.3,
+    "experience_label": "2.3 years",
+    "primary_role": "IoT Engineer",
+    "skills": [
+      "PCB Design",
+      "Altium",
+      "KiCad",
+      "Circuit Debugging",
+      "LTspice",
+      "Electronics"
+    ],
+    "experience": [
+      "IoT Engineer | TechWorks Engineering, Pune | 2026-2028",
+      "Worked on low-power wearable sensor, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Low-Power Wearable Sensor: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using PCB Design, Altium, KiCad, with testing and performance observations."
+    ],
+    "certifications": [
+      "IoT Specialization"
+    ],
+    "achievements": [
+      "Led an embedded systems club project"
+    ],
+    "summary": "Electronics professional with 2.3 years of experience in embedded systems, hardware testing, and connected devices.",
+    "source_filename": "APP000034_Kavya_Iyer.pdf"
+  },
+  {
+    "application_no": "APP000035",
+    "name": "Sanjay Reddy",
+    "department": "ECE",
+    "email": "candidate035@example.com",
+    "phone": "+91-00000-10034",
+    "city": "Kochi",
+    "college": "NIT Warangal",
+    "degree": "B.E. Electronics and Communication Engineering",
+    "graduation_year": 2026,
+    "cgpa": 7.72,
+    "experience_years": 3.6,
+    "experience_label": "3.6 years",
+    "primary_role": "VLSI Engineer",
+    "skills": [
+      "IoT",
+      "ESP32",
+      "MQTT",
+      "Python",
+      "Sensors",
+      "Raspberry Pi",
+      "AWS IoT"
+    ],
+    "experience": [
+      "VLSI Engineer | TechWorks Engineering, Kochi | 2027-2030",
+      "Worked on vision-enabled edge device, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Vision-enabled Edge Device: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using IoT, ESP32, MQTT, with testing and performance observations."
+    ],
+    "certifications": [
+      "PCB Design Certificate"
+    ],
+    "achievements": [
+      "Received best project award"
+    ],
+    "summary": "ECE graduate experienced in digital electronics, firmware development, and sensor-based prototypes.",
+    "source_filename": "APP000035_Sanjay_Reddy.pdf"
+  },
+  {
+    "application_no": "APP000036",
+    "name": "Apoorva Das",
+    "department": "ECE",
+    "email": "candidate036@example.com",
+    "phone": "+91-00000-10035",
+    "city": "Amaravati",
+    "college": "IIIT Hyderabad",
+    "degree": "B.Tech Electronics Engineering",
+    "graduation_year": 2020,
+    "cgpa": 9.27,
+    "experience_years": 5.5,
+    "experience_label": "5.5 years",
+    "primary_role": "Test Engineer",
+    "skills": [
+      "Embedded Linux",
+      "C",
+      "Linux",
+      "CAN",
+      "I2C",
+      "SPI",
+      "ARM Cortex-M"
+    ],
+    "experience": [
+      "Test Engineer | TechWorks Engineering, Amaravati | 2021-2026",
+      "Worked on automated pcb test fixture, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Automated PCB Test Fixture: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Embedded Linux, C, Linux, with testing and performance observations."
+    ],
+    "certifications": [
+      "Embedded Systems Certificate"
+    ],
+    "achievements": [
+      "Won a robotics competition"
+    ],
+    "summary": "Embedded and IoT engineer with practical work in microcontrollers, communication protocols, and edge devices.",
+    "source_filename": "APP000036_Apoorva_Das.pdf"
+  },
+  {
+    "application_no": "APP000037",
+    "name": "Vignesh Kumar",
+    "department": "ECE",
+    "email": "candidate037@example.com",
+    "phone": "+91-00000-10036",
+    "city": "Coimbatore",
+    "college": "KL University",
+    "degree": "B.Tech Electronics and Communication Engineering",
+    "graduation_year": 2021,
+    "cgpa": 7.82,
+    "experience_years": 0.4,
+    "experience_label": "0.4 years",
+    "primary_role": "Embedded Engineer",
+    "skills": [
+      "RF",
+      "Microwave",
+      "Antenna Design",
+      "HFSS",
+      "ADS",
+      "MATLAB",
+      "Python"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Smart Factory Monitoring Node: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using RF, Microwave, Antenna Design, with testing and performance observations."
+    ],
+    "certifications": [
+      "MATLAB Onramp"
+    ],
+    "achievements": [
+      "Built a 4-layer PCB prototype"
+    ],
+    "summary": "Electronics professional with 0.4 years of experience in embedded systems, hardware testing, and connected devices.",
+    "source_filename": "APP000037_Vignesh_Kumar.pdf"
+  },
+  {
+    "application_no": "APP000038",
+    "name": "Sowmya Nair",
+    "department": "ECE",
+    "email": "candidate038@example.com",
+    "phone": "+91-00000-10037",
+    "city": "Mysuru",
+    "college": "R.V. College of Engineering",
+    "degree": "B.E. Electronics and Communication Engineering",
+    "graduation_year": 2022,
+    "cgpa": 8.01,
+    "experience_years": 0.6,
+    "experience_label": "0.6 years",
+    "primary_role": "Electronics Engineer",
+    "skills": [
+      "Computer Vision",
+      "Python",
+      "OpenCV",
+      "Edge AI",
+      "Jetson Nano",
+      "TensorFlow Lite"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "FPGA-based Signal Processing Module: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Computer Vision, Python, OpenCV, with testing and performance observations."
+    ],
+    "certifications": [
+      "FPGA Design Fundamentals"
+    ],
+    "achievements": [
+      "Presented at a student research symposium"
+    ],
+    "summary": "ECE graduate experienced in digital electronics, firmware development, and sensor-based prototypes.",
+    "source_filename": "APP000038_Sowmya_Nair.pdf"
+  },
+  {
+    "application_no": "APP000039",
+    "name": "Ritesh Menon",
+    "department": "ECE",
+    "email": "candidate039@example.com",
+    "phone": "+91-00000-10038",
+    "city": "Visakhapatnam",
+    "college": "Sathyabama Institute of Science and Technology",
+    "degree": "B.Tech Electronics Engineering",
+    "graduation_year": 2023,
+    "cgpa": 8.16,
+    "experience_years": 1.7,
+    "experience_label": "1.7 years",
+    "primary_role": "Firmware Engineer",
+    "skills": [
+      "Embedded C",
+      "C",
+      "Arduino",
+      "ESP32",
+      "UART",
+      "SPI",
+      "I2C"
+    ],
+    "experience": [
+      "Firmware Engineer | TechWorks Engineering, Visakhapatnam | 2024-2025",
+      "Worked on iot air quality monitor, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "IoT Air Quality Monitor: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Embedded C, C, Arduino, with testing and performance observations."
+    ],
+    "certifications": [
+      "IoT Specialization"
+    ],
+    "achievements": [
+      "Led an embedded systems club project"
+    ],
+    "summary": "Embedded and IoT engineer with practical work in microcontrollers, communication protocols, and edge devices.",
+    "source_filename": "APP000039_Ritesh_Menon.pdf"
+  },
+  {
+    "application_no": "APP000040",
+    "name": "Navya Shah",
+    "department": "ECE",
+    "email": "candidate040@example.com",
+    "phone": "+91-00000-10039",
+    "city": "Vijayawada",
+    "college": "BMS College of Engineering",
+    "degree": "B.Tech Electronics and Communication Engineering",
+    "graduation_year": 2024,
+    "cgpa": 7.67,
+    "experience_years": 2.4,
+    "experience_label": "2.4 years",
+    "primary_role": "IoT Engineer",
+    "skills": [
+      "Verilog",
+      "SystemVerilog",
+      "FPGA",
+      "RTL Design",
+      "VHDL",
+      "Digital Electronics"
+    ],
+    "experience": [
+      "IoT Engineer | TechWorks Engineering, Vijayawada | 2025-2027",
+      "Worked on low-power wearable sensor, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Low-Power Wearable Sensor: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Verilog, SystemVerilog, FPGA, with testing and performance observations."
+    ],
+    "certifications": [
+      "PCB Design Certificate"
+    ],
+    "achievements": [
+      "Received best project award"
+    ],
+    "summary": "Electronics professional with 2.4 years of experience in embedded systems, hardware testing, and connected devices.",
+    "source_filename": "APP000040_Navya_Shah.pdf"
+  },
+  {
+    "application_no": "APP000041",
+    "name": "Gokul Iyer",
+    "department": "ECE",
+    "email": "candidate041@example.com",
+    "phone": "+91-00000-10040",
+    "city": "Bengaluru",
+    "college": "Vellore Institute of Technology",
+    "degree": "B.E. Electronics and Communication Engineering",
+    "graduation_year": 2025,
+    "cgpa": 7.7,
+    "experience_years": 4.0,
+    "experience_label": "4 years",
+    "primary_role": "VLSI Engineer",
+    "skills": [
+      "MATLAB",
+      "Simulink",
+      "Signal Processing",
+      "Python",
+      "DSP",
+      "Control Systems"
+    ],
+    "experience": [
+      "VLSI Engineer | TechWorks Engineering, Bengaluru | 2026-2030",
+      "Worked on vision-enabled edge device, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Vision-enabled Edge Device: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using MATLAB, Simulink, Signal Processing, with testing and performance observations."
+    ],
+    "certifications": [
+      "Embedded Systems Certificate"
+    ],
+    "achievements": [
+      "Won a robotics competition"
+    ],
+    "summary": "ECE graduate experienced in digital electronics, firmware development, and sensor-based prototypes.",
+    "source_filename": "APP000041_Gokul_Iyer.pdf"
+  },
+  {
+    "application_no": "APP000042",
+    "name": "Pallavi Reddy",
+    "department": "ECE",
+    "email": "candidate042@example.com",
+    "phone": "+91-00000-10041",
+    "city": "Hyderabad",
+    "college": "SRM Institute of Science and Technology",
+    "degree": "B.Tech Electronics Engineering",
+    "graduation_year": 2026,
+    "cgpa": 9.16,
+    "experience_years": 6.5,
+    "experience_label": "6.5 years",
+    "primary_role": "Test Engineer",
+    "skills": [
+      "PCB Design",
+      "Altium",
+      "KiCad",
+      "Circuit Debugging",
+      "LTspice",
+      "Electronics"
+    ],
+    "experience": [
+      "Test Engineer | TechWorks Engineering, Hyderabad | 2027-2033",
+      "Worked on automated pcb test fixture, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Automated PCB Test Fixture: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using PCB Design, Altium, KiCad, with testing and performance observations."
+    ],
+    "certifications": [
+      "MATLAB Onramp"
+    ],
+    "achievements": [
+      "Built a 4-layer PCB prototype"
+    ],
+    "summary": "Embedded and IoT engineer with practical work in microcontrollers, communication protocols, and edge devices.",
+    "source_filename": "APP000042_Pallavi_Reddy.pdf"
+  },
+  {
+    "application_no": "APP000043",
+    "name": "Tejas Kumar",
+    "department": "ECE",
+    "email": "candidate043@example.com",
+    "phone": "+91-00000-10042",
+    "city": "Chennai",
+    "college": "Amrita Vishwa Vidyapeetham",
+    "degree": "B.Tech Electronics and Communication Engineering",
+    "graduation_year": 2020,
+    "cgpa": 7.6,
+    "experience_years": 0.2,
+    "experience_label": "0.2 years",
+    "primary_role": "Embedded Engineer",
+    "skills": [
+      "IoT",
+      "ESP32",
+      "MQTT",
+      "Python",
+      "Sensors",
+      "Raspberry Pi",
+      "AWS IoT"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Smart Factory Monitoring Node: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using IoT, ESP32, MQTT, with testing and performance observations."
+    ],
+    "certifications": [
+      "FPGA Design Fundamentals"
+    ],
+    "achievements": [
+      "Presented at a student research symposium"
+    ],
+    "summary": "Electronics professional with 0.2 years of experience in embedded systems, hardware testing, and connected devices.",
+    "source_filename": "APP000043_Tejas_Kumar.pdf"
+  },
+  {
+    "application_no": "APP000044",
+    "name": "Harini Nair",
+    "department": "ECE",
+    "email": "candidate044@example.com",
+    "phone": "+91-00000-10043",
+    "city": "Pune",
+    "college": "PSG College of Technology",
+    "degree": "B.E. Electronics and Communication Engineering",
+    "graduation_year": 2021,
+    "cgpa": 8.27,
+    "experience_years": 0.9,
+    "experience_label": "0.9 years",
+    "primary_role": "Electronics Engineer",
+    "skills": [
+      "Embedded Linux",
+      "C",
+      "Linux",
+      "CAN",
+      "I2C",
+      "SPI",
+      "ARM Cortex-M"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "FPGA-based Signal Processing Module: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Embedded Linux, C, Linux, with testing and performance observations."
+    ],
+    "certifications": [
+      "IoT Specialization"
+    ],
+    "achievements": [
+      "Led an embedded systems club project"
+    ],
+    "summary": "ECE graduate experienced in digital electronics, firmware development, and sensor-based prototypes.",
+    "source_filename": "APP000044_Harini_Nair.pdf"
+  },
+  {
+    "application_no": "APP000045",
+    "name": "Suresh Menon",
+    "department": "ECE",
+    "email": "candidate045@example.com",
+    "phone": "+91-00000-10044",
+    "city": "Kochi",
+    "college": "NIT Warangal",
+    "degree": "B.Tech Electronics Engineering",
+    "graduation_year": 2022,
+    "cgpa": 7.21,
+    "experience_years": 1.1,
+    "experience_label": "1.1 years",
+    "primary_role": "Firmware Engineer",
+    "skills": [
+      "RF",
+      "Microwave",
+      "Antenna Design",
+      "HFSS",
+      "ADS",
+      "MATLAB"
+    ],
+    "experience": [
+      "Firmware Engineer | TechWorks Engineering, Kochi | 2023-2024",
+      "Worked on iot air quality monitor, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "IoT Air Quality Monitor: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using RF, Microwave, Antenna Design, with testing and performance observations."
+    ],
+    "certifications": [
+      "PCB Design Certificate"
+    ],
+    "achievements": [
+      "Received best project award"
+    ],
+    "summary": "Embedded and IoT engineer with practical work in microcontrollers, communication protocols, and edge devices.",
+    "source_filename": "APP000045_Suresh_Menon.pdf"
+  },
+  {
+    "application_no": "APP000046",
+    "name": "Aman Rao",
+    "department": "ECE",
+    "email": "candidate046@example.com",
+    "phone": "+91-00000-10045",
+    "city": "Amaravati",
+    "college": "IIIT Hyderabad",
+    "degree": "B.Tech Electronics and Communication Engineering",
+    "graduation_year": 2023,
+    "cgpa": 8.54,
+    "experience_years": 2.2,
+    "experience_label": "2.2 years",
+    "primary_role": "IoT Engineer",
+    "skills": [
+      "Computer Vision",
+      "Python",
+      "OpenCV",
+      "Edge AI",
+      "Jetson Nano",
+      "TensorFlow Lite"
+    ],
+    "experience": [
+      "IoT Engineer | TechWorks Engineering, Amaravati | 2024-2026",
+      "Worked on low-power wearable sensor, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Low-Power Wearable Sensor: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Computer Vision, Python, OpenCV, with testing and performance observations."
+    ],
+    "certifications": [
+      "Embedded Systems Certificate"
+    ],
+    "achievements": [
+      "Won a robotics competition"
+    ],
+    "summary": "Electronics professional with 2.2 years of experience in embedded systems, hardware testing, and connected devices.",
+    "source_filename": "APP000046_Aman_Rao.pdf"
+  },
+  {
+    "application_no": "APP000047",
+    "name": "Bhavana Iyer",
+    "department": "ECE",
+    "email": "candidate047@example.com",
+    "phone": "+91-00000-10046",
+    "city": "Coimbatore",
+    "college": "KL University",
+    "degree": "B.E. Electronics and Communication Engineering",
+    "graduation_year": 2024,
+    "cgpa": 8.07,
+    "experience_years": 4.4,
+    "experience_label": "4.4 years",
+    "primary_role": "VLSI Engineer",
+    "skills": [
+      "Embedded C",
+      "C",
+      "Arduino",
+      "ESP32",
+      "UART",
+      "SPI",
+      "I2C"
+    ],
+    "experience": [
+      "VLSI Engineer | TechWorks Engineering, Coimbatore | 2025-2029",
+      "Worked on vision-enabled edge device, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Vision-enabled Edge Device: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Embedded C, C, Arduino, with testing and performance observations."
+    ],
+    "certifications": [
+      "MATLAB Onramp"
+    ],
+    "achievements": [
+      "Built a 4-layer PCB prototype"
+    ],
+    "summary": "ECE graduate experienced in digital electronics, firmware development, and sensor-based prototypes.",
+    "source_filename": "APP000047_Bhavana_Iyer.pdf"
+  },
+  {
+    "application_no": "APP000048",
+    "name": "Suraj Das",
+    "department": "ECE",
+    "email": "candidate048@example.com",
+    "phone": "+91-00000-10047",
+    "city": "Mysuru",
+    "college": "R.V. College of Engineering",
+    "degree": "B.Tech Electronics Engineering",
+    "graduation_year": 2025,
+    "cgpa": 7.98,
+    "experience_years": 5.2,
+    "experience_label": "5.2 years",
+    "primary_role": "Test Engineer",
+    "skills": [
+      "Verilog",
+      "SystemVerilog",
+      "FPGA",
+      "RTL Design",
+      "VHDL",
+      "Digital Electronics"
+    ],
+    "experience": [
+      "Test Engineer | TechWorks Engineering, Mysuru | 2026-2031",
+      "Worked on automated pcb test fixture, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Automated PCB Test Fixture: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Verilog, SystemVerilog, FPGA, with testing and performance observations."
+    ],
+    "certifications": [
+      "FPGA Design Fundamentals"
+    ],
+    "achievements": [
+      "Presented at a student research symposium"
+    ],
+    "summary": "Embedded and IoT engineer with practical work in microcontrollers, communication protocols, and edge devices.",
+    "source_filename": "APP000048_Suraj_Das.pdf"
+  },
+  {
+    "application_no": "APP000049",
+    "name": "Keerthi Menon",
+    "department": "ECE",
+    "email": "candidate049@example.com",
+    "phone": "+91-00000-10048",
+    "city": "Visakhapatnam",
+    "college": "Sathyabama Institute of Science and Technology",
+    "degree": "B.Tech Electronics and Communication Engineering",
+    "graduation_year": 2026,
+    "cgpa": 8.32,
+    "experience_years": 0.5,
+    "experience_label": "0.5 years",
+    "primary_role": "Embedded Engineer",
+    "skills": [
+      "MATLAB",
+      "Simulink",
+      "Signal Processing",
+      "Python",
+      "DSP",
+      "Control Systems"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Smart Factory Monitoring Node: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using MATLAB, Simulink, Signal Processing, with testing and performance observations."
+    ],
+    "certifications": [
+      "IoT Specialization"
+    ],
+    "achievements": [
+      "Led an embedded systems club project"
+    ],
+    "summary": "Electronics professional with 0.5 years of experience in embedded systems, hardware testing, and connected devices.",
+    "source_filename": "APP000049_Keerthi_Menon.pdf"
+  },
+  {
+    "application_no": "APP000050",
+    "name": "Mohan Reddy",
+    "department": "ECE",
+    "email": "candidate050@example.com",
+    "phone": "+91-00000-10049",
+    "city": "Vijayawada",
+    "college": "BMS College of Engineering",
+    "degree": "B.E. Electronics and Communication Engineering",
+    "graduation_year": 2020,
+    "cgpa": 9.08,
+    "experience_years": 0.9,
+    "experience_label": "0.9 years",
+    "primary_role": "Electronics Engineer",
+    "skills": [
+      "PCB Design",
+      "Altium",
+      "KiCad",
+      "Circuit Debugging",
+      "LTspice",
+      "Electronics"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "FPGA-based Signal Processing Module: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using PCB Design, Altium, KiCad, with testing and performance observations."
+    ],
+    "certifications": [
+      "PCB Design Certificate"
+    ],
+    "achievements": [
+      "Received best project award"
+    ],
+    "summary": "ECE graduate experienced in digital electronics, firmware development, and sensor-based prototypes.",
+    "source_filename": "APP000050_Mohan_Reddy.pdf"
+  },
+  {
+    "application_no": "APP000051",
+    "name": "Anu Pillai",
+    "department": "ECE",
+    "email": "candidate051@example.com",
+    "phone": "+91-00000-10050",
+    "city": "Bengaluru",
+    "college": "Vellore Institute of Technology",
+    "degree": "B.Tech Electronics Engineering",
+    "graduation_year": 2021,
+    "cgpa": 8.76,
+    "experience_years": 1.0,
+    "experience_label": "1 years",
+    "primary_role": "Firmware Engineer",
+    "skills": [
+      "IoT",
+      "ESP32",
+      "MQTT",
+      "Python",
+      "Sensors",
+      "Raspberry Pi",
+      "AWS IoT"
+    ],
+    "experience": [
+      "Firmware Engineer | TechWorks Engineering, Bengaluru | 2022-2023",
+      "Worked on iot air quality monitor, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "IoT Air Quality Monitor: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using IoT, ESP32, MQTT, with testing and performance observations."
+    ],
+    "certifications": [
+      "Embedded Systems Certificate"
+    ],
+    "achievements": [
+      "Won a robotics competition"
+    ],
+    "summary": "Embedded and IoT engineer with practical work in microcontrollers, communication protocols, and edge devices.",
+    "source_filename": "APP000051_Anu_Pillai.pdf"
+  },
+  {
+    "application_no": "APP000052",
+    "name": "Ravi Nair",
+    "department": "ECE",
+    "email": "candidate052@example.com",
+    "phone": "+91-00000-10051",
+    "city": "Hyderabad",
+    "college": "SRM Institute of Science and Technology",
+    "degree": "B.Tech Electronics and Communication Engineering",
+    "graduation_year": 2022,
+    "cgpa": 8.34,
+    "experience_years": 3.0,
+    "experience_label": "3 years",
+    "primary_role": "IoT Engineer",
+    "skills": [
+      "Embedded Linux",
+      "C",
+      "Linux",
+      "CAN",
+      "I2C",
+      "SPI",
+      "ARM Cortex-M"
+    ],
+    "experience": [
+      "IoT Engineer | TechWorks Engineering, Hyderabad | 2023-2026",
+      "Worked on low-power wearable sensor, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Low-Power Wearable Sensor: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Embedded Linux, C, Linux, with testing and performance observations."
+    ],
+    "certifications": [
+      "MATLAB Onramp"
+    ],
+    "achievements": [
+      "Built a 4-layer PCB prototype"
+    ],
+    "summary": "Electronics professional with 3 years of experience in embedded systems, hardware testing, and connected devices.",
+    "source_filename": "APP000052_Ravi_Nair.pdf"
+  },
+  {
+    "application_no": "APP000053",
+    "name": "Divya Rao",
+    "department": "ECE",
+    "email": "candidate053@example.com",
+    "phone": "+91-00000-10052",
+    "city": "Chennai",
+    "college": "Amrita Vishwa Vidyapeetham",
+    "degree": "B.E. Electronics and Communication Engineering",
+    "graduation_year": 2023,
+    "cgpa": 8.57,
+    "experience_years": 3.5,
+    "experience_label": "3.5 years",
+    "primary_role": "VLSI Engineer",
+    "skills": [
+      "RF",
+      "Microwave",
+      "Antenna Design",
+      "HFSS",
+      "ADS",
+      "MATLAB"
+    ],
+    "experience": [
+      "VLSI Engineer | TechWorks Engineering, Chennai | 2024-2027",
+      "Worked on vision-enabled edge device, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Vision-enabled Edge Device: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using RF, Microwave, Antenna Design, with testing and performance observations."
+    ],
+    "certifications": [
+      "FPGA Design Fundamentals"
+    ],
+    "achievements": [
+      "Presented at a student research symposium"
+    ],
+    "summary": "ECE graduate experienced in digital electronics, firmware development, and sensor-based prototypes.",
+    "source_filename": "APP000053_Divya_Rao.pdf"
+  },
+  {
+    "application_no": "APP000054",
+    "name": "Naveen Iyer",
+    "department": "ECE",
+    "email": "candidate054@example.com",
+    "phone": "+91-00000-10053",
+    "city": "Pune",
+    "college": "PSG College of Technology",
+    "degree": "B.Tech Electronics Engineering",
+    "graduation_year": 2024,
+    "cgpa": 8.1,
+    "experience_years": 5.3,
+    "experience_label": "5.3 years",
+    "primary_role": "Test Engineer",
+    "skills": [
+      "Computer Vision",
+      "Python",
+      "OpenCV",
+      "Edge AI",
+      "Jetson Nano",
+      "TensorFlow Lite"
+    ],
+    "experience": [
+      "Test Engineer | TechWorks Engineering, Pune | 2025-2030",
+      "Worked on automated pcb test fixture, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Automated PCB Test Fixture: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Computer Vision, Python, OpenCV, with testing and performance observations."
+    ],
+    "certifications": [
+      "IoT Specialization"
+    ],
+    "achievements": [
+      "Led an embedded systems club project"
+    ],
+    "summary": "Embedded and IoT engineer with practical work in microcontrollers, communication protocols, and edge devices.",
+    "source_filename": "APP000054_Naveen_Iyer.pdf"
+  },
+  {
+    "application_no": "APP000055",
+    "name": "Swathi Kumar",
+    "department": "ECE",
+    "email": "candidate055@example.com",
+    "phone": "+91-00000-10054",
+    "city": "Kochi",
+    "college": "NIT Warangal",
+    "degree": "B.Tech Electronics and Communication Engineering",
+    "graduation_year": 2025,
+    "cgpa": 9.29,
+    "experience_years": 0.2,
+    "experience_label": "0.2 years",
+    "primary_role": "Embedded Engineer",
+    "skills": [
+      "Embedded C",
+      "C",
+      "Arduino",
+      "ESP32",
+      "UART",
+      "SPI",
+      "I2C",
+      "Python"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Smart Factory Monitoring Node: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Embedded C, C, Arduino, with testing and performance observations."
+    ],
+    "certifications": [
+      "PCB Design Certificate"
+    ],
+    "achievements": [
+      "Received best project award"
+    ],
+    "summary": "Electronics professional with 0.2 years of experience in embedded systems, hardware testing, and connected devices.",
+    "source_filename": "APP000055_Swathi_Kumar.pdf"
+  },
+  {
+    "application_no": "APP000056",
+    "name": "Nithin Menon",
+    "department": "ECE",
+    "email": "candidate056@example.com",
+    "phone": "+91-00000-10055",
+    "city": "Amaravati",
+    "college": "IIIT Hyderabad",
+    "degree": "B.E. Electronics and Communication Engineering",
+    "graduation_year": 2026,
+    "cgpa": 7.71,
+    "experience_years": 0.8,
+    "experience_label": "0.8 years",
+    "primary_role": "Electronics Engineer",
+    "skills": [
+      "Verilog",
+      "SystemVerilog",
+      "FPGA",
+      "RTL Design",
+      "VHDL",
+      "Digital Electronics"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "FPGA-based Signal Processing Module: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Verilog, SystemVerilog, FPGA, with testing and performance observations."
+    ],
+    "certifications": [
+      "Embedded Systems Certificate"
+    ],
+    "achievements": [
+      "Won a robotics competition"
+    ],
+    "summary": "ECE graduate experienced in digital electronics, firmware development, and sensor-based prototypes.",
+    "source_filename": "APP000056_Nithin_Menon.pdf"
+  },
+  {
+    "application_no": "APP000057",
+    "name": "Reshma Nair",
+    "department": "ECE",
+    "email": "candidate057@example.com",
+    "phone": "+91-00000-10056",
+    "city": "Coimbatore",
+    "college": "KL University",
+    "degree": "B.Tech Electronics Engineering",
+    "graduation_year": 2020,
+    "cgpa": 7.51,
+    "experience_years": 1.4,
+    "experience_label": "1.4 years",
+    "primary_role": "Firmware Engineer",
+    "skills": [
+      "MATLAB",
+      "Simulink",
+      "Signal Processing",
+      "Python",
+      "DSP",
+      "Control Systems"
+    ],
+    "experience": [
+      "Firmware Engineer | TechWorks Engineering, Coimbatore | 2021-2022",
+      "Worked on iot air quality monitor, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "IoT Air Quality Monitor: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using MATLAB, Simulink, Signal Processing, with testing and performance observations."
+    ],
+    "certifications": [
+      "MATLAB Onramp"
+    ],
+    "achievements": [
+      "Built a 4-layer PCB prototype"
+    ],
+    "summary": "Embedded and IoT engineer with practical work in microcontrollers, communication protocols, and edge devices.",
+    "source_filename": "APP000057_Reshma_Nair.pdf"
+  },
+  {
+    "application_no": "APP000058",
+    "name": "Chandan Reddy",
+    "department": "ECE",
+    "email": "candidate058@example.com",
+    "phone": "+91-00000-10057",
+    "city": "Mysuru",
+    "college": "R.V. College of Engineering",
+    "degree": "B.Tech Electronics and Communication Engineering",
+    "graduation_year": 2021,
+    "cgpa": 9.1,
+    "experience_years": 3.3,
+    "experience_label": "3.3 years",
+    "primary_role": "IoT Engineer",
+    "skills": [
+      "PCB Design",
+      "Altium",
+      "KiCad",
+      "Circuit Debugging",
+      "LTspice",
+      "Electronics"
+    ],
+    "experience": [
+      "IoT Engineer | TechWorks Engineering, Mysuru | 2022-2025",
+      "Worked on low-power wearable sensor, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Low-Power Wearable Sensor: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using PCB Design, Altium, KiCad, with testing and performance observations."
+    ],
+    "certifications": [
+      "FPGA Design Fundamentals"
+    ],
+    "achievements": [
+      "Presented at a student research symposium"
+    ],
+    "summary": "Electronics professional with 3.3 years of experience in embedded systems, hardware testing, and connected devices.",
+    "source_filename": "APP000058_Chandan_Reddy.pdf"
+  },
+  {
+    "application_no": "APP000059",
+    "name": "Asha Rao",
+    "department": "ECE",
+    "email": "candidate059@example.com",
+    "phone": "+91-00000-10058",
+    "city": "Visakhapatnam",
+    "college": "Sathyabama Institute of Science and Technology",
+    "degree": "B.E. Electronics and Communication Engineering",
+    "graduation_year": 2022,
+    "cgpa": 8.57,
+    "experience_years": 3.5,
+    "experience_label": "3.5 years",
+    "primary_role": "VLSI Engineer",
+    "skills": [
+      "IoT",
+      "ESP32",
+      "MQTT",
+      "Python",
+      "Sensors",
+      "Raspberry Pi",
+      "AWS IoT"
+    ],
+    "experience": [
+      "VLSI Engineer | TechWorks Engineering, Visakhapatnam | 2023-2026",
+      "Worked on vision-enabled edge device, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Vision-enabled Edge Device: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using IoT, ESP32, MQTT, with testing and performance observations."
+    ],
+    "certifications": [
+      "IoT Specialization"
+    ],
+    "achievements": [
+      "Led an embedded systems club project"
+    ],
+    "summary": "ECE graduate experienced in digital electronics, firmware development, and sensor-based prototypes.",
+    "source_filename": "APP000059_Asha_Rao.pdf"
+  },
+  {
+    "application_no": "APP000060",
+    "name": "Pranav Iyer",
+    "department": "ECE",
+    "email": "candidate060@example.com",
+    "phone": "+91-00000-10059",
+    "city": "Vijayawada",
+    "college": "BMS College of Engineering",
+    "degree": "B.Tech Electronics Engineering",
+    "graduation_year": 2023,
+    "cgpa": 7.45,
+    "experience_years": 6.5,
+    "experience_label": "6.5 years",
+    "primary_role": "Test Engineer",
+    "skills": [
+      "Embedded Linux",
+      "C",
+      "Linux",
+      "CAN",
+      "I2C",
+      "SPI",
+      "ARM Cortex-M"
+    ],
+    "experience": [
+      "Test Engineer | TechWorks Engineering, Vijayawada | 2024-2030",
+      "Worked on automated pcb test fixture, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Automated PCB Test Fixture: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Embedded Linux, C, Linux, with testing and performance observations."
+    ],
+    "certifications": [
+      "PCB Design Certificate"
+    ],
+    "achievements": [
+      "Received best project award"
+    ],
+    "summary": "Embedded and IoT engineer with practical work in microcontrollers, communication protocols, and edge devices.",
+    "source_filename": "APP000060_Pranav_Iyer.pdf"
+  },
+  {
+    "application_no": "APP000061",
+    "name": "Varsha Menon",
+    "department": "MECH",
+    "email": "candidate061@example.com",
+    "phone": "+91-00000-10060",
+    "city": "Bengaluru",
+    "college": "Vellore Institute of Technology",
+    "degree": "B.Tech Mechanical Engineering",
+    "graduation_year": 2024,
+    "cgpa": 8.34,
+    "experience_years": 0.4,
+    "experience_label": "0.4 years",
+    "primary_role": "Mechanical Design Engineer",
+    "skills": [
+      "AutoCAD",
+      "SolidWorks",
+      "GD&T",
+      "DFMA",
+      "CNC",
+      "Manufacturing",
+      "Python"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Automated Assembly Fixture: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using AutoCAD, SolidWorks, GD&T, with testing and performance observations."
+    ],
+    "certifications": [
+      "SolidWorks Associate"
+    ],
+    "achievements": [
+      "Improved prototype cycle time by 18%"
+    ],
+    "summary": "Mechanical engineering professional with 0.4 years of experience in design, manufacturing, and engineering analysis.",
+    "source_filename": "APP000061_Varsha_Menon.pdf"
+  },
+  {
+    "application_no": "APP000062",
+    "name": "Rahul Nair",
+    "department": "MECH",
+    "email": "candidate062@example.com",
+    "phone": "+91-00000-10061",
+    "city": "Hyderabad",
+    "college": "SRM Institute of Science and Technology",
+    "degree": "B.E. Mechanical Engineering",
+    "graduation_year": 2025,
+    "cgpa": 8.32,
+    "experience_years": 0.7,
+    "experience_label": "0.7 years",
+    "primary_role": "Manufacturing Engineer",
+    "skills": [
+      "CATIA",
+      "ANSYS",
+      "Finite Element Analysis",
+      "SolidWorks",
+      "Materials",
+      "Thermal Analysis"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "EV Battery Cooling Study: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using CATIA, ANSYS, Finite Element Analysis, with testing and performance observations."
+    ],
+    "certifications": [
+      "ANSYS Fundamentals"
+    ],
+    "achievements": [
+      "Won a design challenge"
+    ],
+    "summary": "Mechanical engineer experienced in CAD, product development, and manufacturing-oriented problem solving.",
+    "source_filename": "APP000062_Rahul_Nair.pdf"
+  },
+  {
+    "application_no": "APP000063",
+    "name": "Monica Reddy",
+    "department": "MECH",
+    "email": "candidate063@example.com",
+    "phone": "+91-00000-10062",
+    "city": "Chennai",
+    "college": "Amrita Vishwa Vidyapeetham",
+    "degree": "B.Tech Production Engineering",
+    "graduation_year": 2026,
+    "cgpa": 7.85,
+    "experience_years": 1.0,
+    "experience_label": "1 years",
+    "primary_role": "Product Design Engineer",
+    "skills": [
+      "Python",
+      "MATLAB",
+      "Simulink",
+      "Control Systems",
+      "Automation",
+      "Robotics"
+    ],
+    "experience": [
+      "Product Design Engineer | TechWorks Engineering, Chennai | 2027-2028",
+      "Worked on predictive maintenance prototype, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Predictive Maintenance Prototype: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, MATLAB, Simulink, with testing and performance observations."
+    ],
+    "certifications": [
+      "Six Sigma Yellow Belt"
+    ],
+    "achievements": [
+      "Led a 5-member fabrication team"
+    ],
+    "summary": "Design and automation professional with hands-on exposure to CAD, prototyping, and process improvement.",
+    "source_filename": "APP000063_Monica_Reddy.pdf"
+  },
+  {
+    "application_no": "APP000064",
+    "name": "Abhay Kumar",
+    "department": "MECH",
+    "email": "candidate064@example.com",
+    "phone": "+91-00000-10063",
+    "city": "Pune",
+    "college": "PSG College of Technology",
+    "degree": "B.Tech Mechanical Engineering",
+    "graduation_year": 2020,
+    "cgpa": 9.24,
+    "experience_years": 2.0,
+    "experience_label": "2 years",
+    "primary_role": "CAE Engineer",
+    "skills": [
+      "Creo",
+      "GD&T",
+      "Tolerance Stack-Up",
+      "Product Design",
+      "3D Printing",
+      "Rapid Prototyping"
+    ],
+    "experience": [
+      "CAE Engineer | TechWorks Engineering, Pune | 2021-2023",
+      "Worked on cnc tool life optimization, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "CNC Tool Life Optimization: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Creo, GD&T, Tolerance Stack-Up, with testing and performance observations."
+    ],
+    "certifications": [
+      "AutoCAD Certification"
+    ],
+    "achievements": [
+      "Presented at an engineering symposium"
+    ],
+    "summary": "Mechanical engineering professional with 2 years of experience in design, manufacturing, and engineering analysis.",
+    "source_filename": "APP000064_Abhay_Kumar.pdf"
+  },
+  {
+    "application_no": "APP000065",
+    "name": "Deepa Shah",
+    "department": "MECH",
+    "email": "candidate065@example.com",
+    "phone": "+91-00000-10064",
+    "city": "Kochi",
+    "college": "NIT Warangal",
+    "degree": "B.E. Mechanical Engineering",
+    "graduation_year": 2021,
+    "cgpa": 9.01,
+    "experience_years": 4.6,
+    "experience_label": "4.6 years",
+    "primary_role": "Production Engineer",
+    "skills": [
+      "ANSYS",
+      "CFD",
+      "Fluent",
+      "Thermal Engineering",
+      "Heat Transfer",
+      "MATLAB"
+    ],
+    "experience": [
+      "Production Engineer | TechWorks Engineering, Kochi | 2022-2026",
+      "Worked on robotic pick-and-place cell, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Robotic Pick-and-Place Cell: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using ANSYS, CFD, Fluent, with testing and performance observations."
+    ],
+    "certifications": [
+      "MATLAB for Engineers"
+    ],
+    "achievements": [
+      "Received departmental project award"
+    ],
+    "summary": "Mechanical engineer experienced in CAD, product development, and manufacturing-oriented problem solving.",
+    "source_filename": "APP000065_Deepa_Shah.pdf"
+  },
+  {
+    "application_no": "APP000066",
+    "name": "Rakesh Iyer",
+    "department": "MECH",
+    "email": "candidate066@example.com",
+    "phone": "+91-00000-10065",
+    "city": "Amaravati",
+    "college": "IIIT Hyderabad",
+    "degree": "B.Tech Production Engineering",
+    "graduation_year": 2022,
+    "cgpa": 7.23,
+    "experience_years": 5.8,
+    "experience_label": "5.8 years",
+    "primary_role": "Automation Engineer",
+    "skills": [
+      "NX CAD",
+      "CAM",
+      "CNC",
+      "Tool Design",
+      "Manufacturing Engineering",
+      "Quality"
+    ],
+    "experience": [
+      "Automation Engineer | TechWorks Engineering, Amaravati | 2023-2028",
+      "Worked on lightweight bracket redesign, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Lightweight Bracket Redesign: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using NX CAD, CAM, CNC, with testing and performance observations."
+    ],
+    "certifications": [
+      "SolidWorks Associate"
+    ],
+    "achievements": [
+      "Improved prototype cycle time by 18%"
+    ],
+    "summary": "Design and automation professional with hands-on exposure to CAD, prototyping, and process improvement.",
+    "source_filename": "APP000066_Rakesh_Iyer.pdf"
+  },
+  {
+    "application_no": "APP000067",
+    "name": "Shalini Nair",
+    "department": "MECH",
+    "email": "candidate067@example.com",
+    "phone": "+91-00000-10066",
+    "city": "Coimbatore",
+    "college": "KL University",
+    "degree": "B.Tech Mechanical Engineering",
+    "graduation_year": 2023,
+    "cgpa": 9.28,
+    "experience_years": 0.4,
+    "experience_label": "0.4 years",
+    "primary_role": "Mechanical Design Engineer",
+    "skills": [
+      "SolidWorks",
+      "Sheet Metal",
+      "Welding",
+      "BOM",
+      "ERP",
+      "Production Planning"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Automated Assembly Fixture: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using SolidWorks, Sheet Metal, Welding, with testing and performance observations."
+    ],
+    "certifications": [
+      "ANSYS Fundamentals"
+    ],
+    "achievements": [
+      "Won a design challenge"
+    ],
+    "summary": "Mechanical engineering professional with 0.4 years of experience in design, manufacturing, and engineering analysis.",
+    "source_filename": "APP000067_Shalini_Nair.pdf"
+  },
+  {
+    "application_no": "APP000068",
+    "name": "Girish Menon",
+    "department": "MECH",
+    "email": "candidate068@example.com",
+    "phone": "+91-00000-10067",
+    "city": "Mysuru",
+    "college": "R.V. College of Engineering",
+    "degree": "B.E. Mechanical Engineering",
+    "graduation_year": 2024,
+    "cgpa": 8.22,
+    "experience_years": 0.1,
+    "experience_label": "Fresher",
+    "primary_role": "Manufacturing Engineer",
+    "skills": [
+      "Python",
+      "Computer Vision",
+      "Robotics",
+      "ROS",
+      "PLC",
+      "Automation"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "EV Battery Cooling Study: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, Computer Vision, Robotics, with testing and performance observations."
+    ],
+    "certifications": [
+      "Six Sigma Yellow Belt"
+    ],
+    "achievements": [
+      "Led a 5-member fabrication team"
+    ],
+    "summary": "Mechanical engineer experienced in CAD, product development, and manufacturing-oriented problem solving.",
+    "source_filename": "APP000068_Girish_Menon.pdf"
+  },
+  {
+    "application_no": "APP000069",
+    "name": "Pavithra Rao",
+    "department": "MECH",
+    "email": "candidate069@example.com",
+    "phone": "+91-00000-10068",
+    "city": "Visakhapatnam",
+    "college": "Sathyabama Institute of Science and Technology",
+    "degree": "B.Tech Production Engineering",
+    "graduation_year": 2025,
+    "cgpa": 8.85,
+    "experience_years": 1.1,
+    "experience_label": "1.1 years",
+    "primary_role": "Product Design Engineer",
+    "skills": [
+      "AutoCAD",
+      "SolidWorks",
+      "GD&T",
+      "DFMA",
+      "CNC",
+      "Manufacturing"
+    ],
+    "experience": [
+      "Product Design Engineer | TechWorks Engineering, Visakhapatnam | 2026-2027",
+      "Worked on predictive maintenance prototype, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Predictive Maintenance Prototype: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using AutoCAD, SolidWorks, GD&T, with testing and performance observations."
+    ],
+    "certifications": [
+      "AutoCAD Certification"
+    ],
+    "achievements": [
+      "Presented at an engineering symposium"
+    ],
+    "summary": "Design and automation professional with hands-on exposure to CAD, prototyping, and process improvement.",
+    "source_filename": "APP000069_Pavithra_Rao.pdf"
+  },
+  {
+    "application_no": "APP000070",
+    "name": "Sahil Reddy",
+    "department": "MECH",
+    "email": "candidate070@example.com",
+    "phone": "+91-00000-10069",
+    "city": "Vijayawada",
+    "college": "BMS College of Engineering",
+    "degree": "B.Tech Mechanical Engineering",
+    "graduation_year": 2026,
+    "cgpa": 7.4,
+    "experience_years": 3.1,
+    "experience_label": "3.1 years",
+    "primary_role": "CAE Engineer",
+    "skills": [
+      "CATIA",
+      "ANSYS",
+      "Finite Element Analysis",
+      "SolidWorks",
+      "Materials",
+      "Thermal Analysis"
+    ],
+    "experience": [
+      "CAE Engineer | TechWorks Engineering, Vijayawada | 2027-2030",
+      "Worked on cnc tool life optimization, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "CNC Tool Life Optimization: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using CATIA, ANSYS, Finite Element Analysis, with testing and performance observations."
+    ],
+    "certifications": [
+      "MATLAB for Engineers"
+    ],
+    "achievements": [
+      "Received departmental project award"
+    ],
+    "summary": "Mechanical engineering professional with 3.1 years of experience in design, manufacturing, and engineering analysis.",
+    "source_filename": "APP000070_Sahil_Reddy.pdf"
+  },
+  {
+    "application_no": "APP000071",
+    "name": "Anjali Kumar",
+    "department": "MECH",
+    "email": "candidate071@example.com",
+    "phone": "+91-00000-10070",
+    "city": "Bengaluru",
+    "college": "Vellore Institute of Technology",
+    "degree": "B.E. Mechanical Engineering",
+    "graduation_year": 2020,
+    "cgpa": 8.36,
+    "experience_years": 3.9,
+    "experience_label": "3.9 years",
+    "primary_role": "Production Engineer",
+    "skills": [
+      "Python",
+      "MATLAB",
+      "Simulink",
+      "Control Systems",
+      "Automation",
+      "Robotics"
+    ],
+    "experience": [
+      "Production Engineer | TechWorks Engineering, Bengaluru | 2021-2024",
+      "Worked on robotic pick-and-place cell, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Robotic Pick-and-Place Cell: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, MATLAB, Simulink, with testing and performance observations."
+    ],
+    "certifications": [
+      "SolidWorks Associate"
+    ],
+    "achievements": [
+      "Improved prototype cycle time by 18%"
+    ],
+    "summary": "Mechanical engineer experienced in CAD, product development, and manufacturing-oriented problem solving.",
+    "source_filename": "APP000071_Anjali_Kumar.pdf"
+  },
+  {
+    "application_no": "APP000072",
+    "name": "Sanjay Nair",
+    "department": "MECH",
+    "email": "candidate072@example.com",
+    "phone": "+91-00000-10071",
+    "city": "Hyderabad",
+    "college": "SRM Institute of Science and Technology",
+    "degree": "B.Tech Production Engineering",
+    "graduation_year": 2021,
+    "cgpa": 9.11,
+    "experience_years": 5.7,
+    "experience_label": "5.7 years",
+    "primary_role": "Automation Engineer",
+    "skills": [
+      "Creo",
+      "GD&T",
+      "Tolerance Stack-Up",
+      "Product Design",
+      "3D Printing",
+      "Rapid Prototyping"
+    ],
+    "experience": [
+      "Automation Engineer | TechWorks Engineering, Hyderabad | 2022-2027",
+      "Worked on lightweight bracket redesign, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Lightweight Bracket Redesign: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Creo, GD&T, Tolerance Stack-Up, with testing and performance observations."
+    ],
+    "certifications": [
+      "ANSYS Fundamentals"
+    ],
+    "achievements": [
+      "Won a design challenge"
+    ],
+    "summary": "Design and automation professional with hands-on exposure to CAD, prototyping, and process improvement.",
+    "source_filename": "APP000072_Sanjay_Nair.pdf"
+  },
+  {
+    "application_no": "APP000073",
+    "name": "Madhav Iyer",
+    "department": "MECH",
+    "email": "candidate073@example.com",
+    "phone": "+91-00000-10072",
+    "city": "Chennai",
+    "college": "Amrita Vishwa Vidyapeetham",
+    "degree": "B.Tech Mechanical Engineering",
+    "graduation_year": 2022,
+    "cgpa": 7.59,
+    "experience_years": 0.2,
+    "experience_label": "0.2 years",
+    "primary_role": "Mechanical Design Engineer",
+    "skills": [
+      "ANSYS",
+      "CFD",
+      "Fluent",
+      "Thermal Engineering",
+      "Heat Transfer",
+      "MATLAB"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Automated Assembly Fixture: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using ANSYS, CFD, Fluent, with testing and performance observations."
+    ],
+    "certifications": [
+      "Six Sigma Yellow Belt"
+    ],
+    "achievements": [
+      "Led a 5-member fabrication team"
+    ],
+    "summary": "Mechanical engineering professional with 0.2 years of experience in design, manufacturing, and engineering analysis.",
+    "source_filename": "APP000073_Madhav_Iyer.pdf"
+  },
+  {
+    "application_no": "APP000074",
+    "name": "Janani Menon",
+    "department": "MECH",
+    "email": "candidate074@example.com",
+    "phone": "+91-00000-10073",
+    "city": "Pune",
+    "college": "PSG College of Technology",
+    "degree": "B.E. Mechanical Engineering",
+    "graduation_year": 2023,
+    "cgpa": 8.78,
+    "experience_years": 0.5,
+    "experience_label": "0.5 years",
+    "primary_role": "Manufacturing Engineer",
+    "skills": [
+      "NX CAD",
+      "CAM",
+      "CNC",
+      "Tool Design",
+      "Manufacturing Engineering",
+      "Quality"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "EV Battery Cooling Study: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using NX CAD, CAM, CNC, with testing and performance observations."
+    ],
+    "certifications": [
+      "AutoCAD Certification"
+    ],
+    "achievements": [
+      "Presented at an engineering symposium"
+    ],
+    "summary": "Mechanical engineer experienced in CAD, product development, and manufacturing-oriented problem solving.",
+    "source_filename": "APP000074_Janani_Menon.pdf"
+  },
+  {
+    "application_no": "APP000075",
+    "name": "Lokesh Rao",
+    "department": "MECH",
+    "email": "candidate075@example.com",
+    "phone": "+91-00000-10074",
+    "city": "Kochi",
+    "college": "NIT Warangal",
+    "degree": "B.Tech Production Engineering",
+    "graduation_year": 2024,
+    "cgpa": 7.82,
+    "experience_years": 1.2,
+    "experience_label": "1.2 years",
+    "primary_role": "Product Design Engineer",
+    "skills": [
+      "SolidWorks",
+      "Sheet Metal",
+      "Welding",
+      "BOM",
+      "ERP",
+      "Production Planning",
+      "Python"
+    ],
+    "experience": [
+      "Product Design Engineer | TechWorks Engineering, Kochi | 2025-2026",
+      "Worked on predictive maintenance prototype, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Predictive Maintenance Prototype: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using SolidWorks, Sheet Metal, Welding, with testing and performance observations."
+    ],
+    "certifications": [
+      "MATLAB for Engineers"
+    ],
+    "achievements": [
+      "Received departmental project award"
+    ],
+    "summary": "Design and automation professional with hands-on exposure to CAD, prototyping, and process improvement.",
+    "source_filename": "APP000075_Lokesh_Rao.pdf"
+  },
+  {
+    "application_no": "APP000076",
+    "name": "Sonia Nair",
+    "department": "MECH",
+    "email": "candidate076@example.com",
+    "phone": "+91-00000-10075",
+    "city": "Amaravati",
+    "college": "IIIT Hyderabad",
+    "degree": "B.Tech Mechanical Engineering",
+    "graduation_year": 2025,
+    "cgpa": 8.59,
+    "experience_years": 3.4,
+    "experience_label": "3.4 years",
+    "primary_role": "CAE Engineer",
+    "skills": [
+      "Python",
+      "Computer Vision",
+      "Robotics",
+      "ROS",
+      "PLC",
+      "Automation"
+    ],
+    "experience": [
+      "CAE Engineer | TechWorks Engineering, Amaravati | 2026-2029",
+      "Worked on cnc tool life optimization, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "CNC Tool Life Optimization: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, Computer Vision, Robotics, with testing and performance observations."
+    ],
+    "certifications": [
+      "SolidWorks Associate"
+    ],
+    "achievements": [
+      "Improved prototype cycle time by 18%"
+    ],
+    "summary": "Mechanical engineering professional with 3.4 years of experience in design, manufacturing, and engineering analysis.",
+    "source_filename": "APP000076_Sonia_Nair.pdf"
+  },
+  {
+    "application_no": "APP000077",
+    "name": "Raghu Reddy",
+    "department": "MECH",
+    "email": "candidate077@example.com",
+    "phone": "+91-00000-10076",
+    "city": "Coimbatore",
+    "college": "KL University",
+    "degree": "B.E. Mechanical Engineering",
+    "graduation_year": 2026,
+    "cgpa": 8.29,
+    "experience_years": 3.8,
+    "experience_label": "3.8 years",
+    "primary_role": "Production Engineer",
+    "skills": [
+      "AutoCAD",
+      "SolidWorks",
+      "GD&T",
+      "DFMA",
+      "CNC",
+      "Manufacturing"
+    ],
+    "experience": [
+      "Production Engineer | TechWorks Engineering, Coimbatore | 2027-2030",
+      "Worked on robotic pick-and-place cell, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Robotic Pick-and-Place Cell: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using AutoCAD, SolidWorks, GD&T, with testing and performance observations."
+    ],
+    "certifications": [
+      "ANSYS Fundamentals"
+    ],
+    "achievements": [
+      "Won a design challenge"
+    ],
+    "summary": "Mechanical engineer experienced in CAD, product development, and manufacturing-oriented problem solving.",
+    "source_filename": "APP000077_Raghu_Reddy.pdf"
+  },
+  {
+    "application_no": "APP000078",
+    "name": "Kiran Kumar",
+    "department": "MECH",
+    "email": "candidate078@example.com",
+    "phone": "+91-00000-10077",
+    "city": "Mysuru",
+    "college": "R.V. College of Engineering",
+    "degree": "B.Tech Production Engineering",
+    "graduation_year": 2020,
+    "cgpa": 7.62,
+    "experience_years": 5.3,
+    "experience_label": "5.3 years",
+    "primary_role": "Automation Engineer",
+    "skills": [
+      "CATIA",
+      "ANSYS",
+      "Finite Element Analysis",
+      "SolidWorks",
+      "Materials",
+      "Thermal Analysis"
+    ],
+    "experience": [
+      "Automation Engineer | TechWorks Engineering, Mysuru | 2021-2026",
+      "Worked on lightweight bracket redesign, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Lightweight Bracket Redesign: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using CATIA, ANSYS, Finite Element Analysis, with testing and performance observations."
+    ],
+    "certifications": [
+      "Six Sigma Yellow Belt"
+    ],
+    "achievements": [
+      "Led a 5-member fabrication team"
+    ],
+    "summary": "Design and automation professional with hands-on exposure to CAD, prototyping, and process improvement.",
+    "source_filename": "APP000078_Kiran_Kumar.pdf"
+  },
+  {
+    "application_no": "APP000079",
+    "name": "Madhuri Shah",
+    "department": "MECH",
+    "email": "candidate079@example.com",
+    "phone": "+91-00000-10078",
+    "city": "Visakhapatnam",
+    "college": "Sathyabama Institute of Science and Technology",
+    "degree": "B.Tech Mechanical Engineering",
+    "graduation_year": 2021,
+    "cgpa": 8.45,
+    "experience_years": 0.2,
+    "experience_label": "0.2 years",
+    "primary_role": "Mechanical Design Engineer",
+    "skills": [
+      "Python",
+      "MATLAB",
+      "Simulink",
+      "Control Systems",
+      "Automation",
+      "Robotics"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Automated Assembly Fixture: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, MATLAB, Simulink, with testing and performance observations."
+    ],
+    "certifications": [
+      "AutoCAD Certification"
+    ],
+    "achievements": [
+      "Presented at an engineering symposium"
+    ],
+    "summary": "Mechanical engineering professional with 0.2 years of experience in design, manufacturing, and engineering analysis.",
+    "source_filename": "APP000079_Madhuri_Shah.pdf"
+  },
+  {
+    "application_no": "APP000080",
+    "name": "Vijay Iyer",
+    "department": "MECH",
+    "email": "candidate080@example.com",
+    "phone": "+91-00000-10079",
+    "city": "Vijayawada",
+    "college": "BMS College of Engineering",
+    "degree": "B.E. Mechanical Engineering",
+    "graduation_year": 2022,
+    "cgpa": 7.61,
+    "experience_years": 0.2,
+    "experience_label": "0.2 years",
+    "primary_role": "Manufacturing Engineer",
+    "skills": [
+      "Creo",
+      "GD&T",
+      "Tolerance Stack-Up",
+      "Product Design",
+      "3D Printing",
+      "Rapid Prototyping"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "EV Battery Cooling Study: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Creo, GD&T, Tolerance Stack-Up, with testing and performance observations."
+    ],
+    "certifications": [
+      "MATLAB for Engineers"
+    ],
+    "achievements": [
+      "Received departmental project award"
+    ],
+    "summary": "Mechanical engineer experienced in CAD, product development, and manufacturing-oriented problem solving.",
+    "source_filename": "APP000080_Vijay_Iyer.pdf"
+  },
+  {
+    "application_no": "APP000081",
+    "name": "Rekha Nair",
+    "department": "MECH",
+    "email": "candidate081@example.com",
+    "phone": "+91-00000-10080",
+    "city": "Bengaluru",
+    "college": "Vellore Institute of Technology",
+    "degree": "B.Tech Production Engineering",
+    "graduation_year": 2023,
+    "cgpa": 8.55,
+    "experience_years": 1.1,
+    "experience_label": "1.1 years",
+    "primary_role": "Product Design Engineer",
+    "skills": [
+      "ANSYS",
+      "CFD",
+      "Fluent",
+      "Thermal Engineering",
+      "Heat Transfer",
+      "MATLAB"
+    ],
+    "experience": [
+      "Product Design Engineer | TechWorks Engineering, Bengaluru | 2024-2025",
+      "Worked on predictive maintenance prototype, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Predictive Maintenance Prototype: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using ANSYS, CFD, Fluent, with testing and performance observations."
+    ],
+    "certifications": [
+      "SolidWorks Associate"
+    ],
+    "achievements": [
+      "Improved prototype cycle time by 18%"
+    ],
+    "summary": "Design and automation professional with hands-on exposure to CAD, prototyping, and process improvement.",
+    "source_filename": "APP000081_Rekha_Nair.pdf"
+  },
+  {
+    "application_no": "APP000082",
+    "name": "Tarun Menon",
+    "department": "MECH",
+    "email": "candidate082@example.com",
+    "phone": "+91-00000-10081",
+    "city": "Hyderabad",
+    "college": "SRM Institute of Science and Technology",
+    "degree": "B.Tech Mechanical Engineering",
+    "graduation_year": 2024,
+    "cgpa": 9.18,
+    "experience_years": 2.3,
+    "experience_label": "2.3 years",
+    "primary_role": "CAE Engineer",
+    "skills": [
+      "NX CAD",
+      "CAM",
+      "CNC",
+      "Tool Design",
+      "Manufacturing Engineering",
+      "Quality",
+      "Python"
+    ],
+    "experience": [
+      "CAE Engineer | TechWorks Engineering, Hyderabad | 2025-2027",
+      "Worked on cnc tool life optimization, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "CNC Tool Life Optimization: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using NX CAD, CAM, CNC, with testing and performance observations."
+    ],
+    "certifications": [
+      "ANSYS Fundamentals"
+    ],
+    "achievements": [
+      "Won a design challenge"
+    ],
+    "summary": "Mechanical engineering professional with 2.3 years of experience in design, manufacturing, and engineering analysis.",
+    "source_filename": "APP000082_Tarun_Menon.pdf"
+  },
+  {
+    "application_no": "APP000083",
+    "name": "Padmini Rao",
+    "department": "MECH",
+    "email": "candidate083@example.com",
+    "phone": "+91-00000-10082",
+    "city": "Chennai",
+    "college": "Amrita Vishwa Vidyapeetham",
+    "degree": "B.E. Mechanical Engineering",
+    "graduation_year": 2025,
+    "cgpa": 7.26,
+    "experience_years": 4.5,
+    "experience_label": "4.5 years",
+    "primary_role": "Production Engineer",
+    "skills": [
+      "SolidWorks",
+      "Sheet Metal",
+      "Welding",
+      "BOM",
+      "ERP",
+      "Production Planning"
+    ],
+    "experience": [
+      "Production Engineer | TechWorks Engineering, Chennai | 2026-2030",
+      "Worked on robotic pick-and-place cell, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Robotic Pick-and-Place Cell: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using SolidWorks, Sheet Metal, Welding, with testing and performance observations."
+    ],
+    "certifications": [
+      "Six Sigma Yellow Belt"
+    ],
+    "achievements": [
+      "Led a 5-member fabrication team"
+    ],
+    "summary": "Mechanical engineer experienced in CAD, product development, and manufacturing-oriented problem solving.",
+    "source_filename": "APP000083_Padmini_Rao.pdf"
+  },
+  {
+    "application_no": "APP000084",
+    "name": "Arvind Reddy",
+    "department": "MECH",
+    "email": "candidate084@example.com",
+    "phone": "+91-00000-10083",
+    "city": "Pune",
+    "college": "PSG College of Technology",
+    "degree": "B.Tech Production Engineering",
+    "graduation_year": 2026,
+    "cgpa": 8.64,
+    "experience_years": 5.6,
+    "experience_label": "5.6 years",
+    "primary_role": "Automation Engineer",
+    "skills": [
+      "Python",
+      "Computer Vision",
+      "Robotics",
+      "ROS",
+      "PLC",
+      "Automation"
+    ],
+    "experience": [
+      "Automation Engineer | TechWorks Engineering, Pune | 2027-2032",
+      "Worked on lightweight bracket redesign, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Lightweight Bracket Redesign: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, Computer Vision, Robotics, with testing and performance observations."
+    ],
+    "certifications": [
+      "AutoCAD Certification"
+    ],
+    "achievements": [
+      "Presented at an engineering symposium"
+    ],
+    "summary": "Design and automation professional with hands-on exposure to CAD, prototyping, and process improvement.",
+    "source_filename": "APP000084_Arvind_Reddy.pdf"
+  },
+  {
+    "application_no": "APP000085",
+    "name": "Shivani Kumar",
+    "department": "MECH",
+    "email": "candidate085@example.com",
+    "phone": "+91-00000-10084",
+    "city": "Kochi",
+    "college": "NIT Warangal",
+    "degree": "B.Tech Mechanical Engineering",
+    "graduation_year": 2020,
+    "cgpa": 7.4,
+    "experience_years": 0.1,
+    "experience_label": "Fresher",
+    "primary_role": "Mechanical Design Engineer",
+    "skills": [
+      "AutoCAD",
+      "SolidWorks",
+      "GD&T",
+      "DFMA",
+      "CNC",
+      "Manufacturing"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "Automated Assembly Fixture: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using AutoCAD, SolidWorks, GD&T, with testing and performance observations."
+    ],
+    "certifications": [
+      "MATLAB for Engineers"
+    ],
+    "achievements": [
+      "Received departmental project award"
+    ],
+    "summary": "Mechanical engineering professional with fresher of experience in design, manufacturing, and engineering analysis.",
+    "source_filename": "APP000085_Shivani_Kumar.pdf"
+  },
+  {
+    "application_no": "APP000086",
+    "name": "Mahesh Nair",
+    "department": "MECH",
+    "email": "candidate086@example.com",
+    "phone": "+91-00000-10085",
+    "city": "Amaravati",
+    "college": "IIIT Hyderabad",
+    "degree": "B.E. Mechanical Engineering",
+    "graduation_year": 2021,
+    "cgpa": 8.41,
+    "experience_years": 0.8,
+    "experience_label": "0.8 years",
+    "primary_role": "Manufacturing Engineer",
+    "skills": [
+      "CATIA",
+      "ANSYS",
+      "Finite Element Analysis",
+      "SolidWorks",
+      "Materials",
+      "Thermal Analysis"
+    ],
+    "experience": [
+      "Fresher - academic projects, internships, and engineering coursework"
+    ],
+    "projects": [
+      "EV Battery Cooling Study: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using CATIA, ANSYS, Finite Element Analysis, with testing and performance observations."
+    ],
+    "certifications": [
+      "SolidWorks Associate"
+    ],
+    "achievements": [
+      "Improved prototype cycle time by 18%"
+    ],
+    "summary": "Mechanical engineer experienced in CAD, product development, and manufacturing-oriented problem solving.",
+    "source_filename": "APP000086_Mahesh_Nair.pdf"
+  },
+  {
+    "application_no": "APP000087",
+    "name": "Preethi Iyer",
+    "department": "MECH",
+    "email": "candidate087@example.com",
+    "phone": "+91-00000-10086",
+    "city": "Coimbatore",
+    "college": "KL University",
+    "degree": "B.Tech Production Engineering",
+    "graduation_year": 2022,
+    "cgpa": 8.9,
+    "experience_years": 1.4,
+    "experience_label": "1.4 years",
+    "primary_role": "Product Design Engineer",
+    "skills": [
+      "Python",
+      "MATLAB",
+      "Simulink",
+      "Control Systems",
+      "Automation",
+      "Robotics"
+    ],
+    "experience": [
+      "Product Design Engineer | TechWorks Engineering, Coimbatore | 2023-2024",
+      "Worked on predictive maintenance prototype, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Predictive Maintenance Prototype: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Python, MATLAB, Simulink, with testing and performance observations."
+    ],
+    "certifications": [
+      "ANSYS Fundamentals"
+    ],
+    "achievements": [
+      "Won a design challenge"
+    ],
+    "summary": "Design and automation professional with hands-on exposure to CAD, prototyping, and process improvement.",
+    "source_filename": "APP000087_Preethi_Iyer.pdf"
+  },
+  {
+    "application_no": "APP000088",
+    "name": "Naveen Menon",
+    "department": "MECH",
+    "email": "candidate088@example.com",
+    "phone": "+91-00000-10087",
+    "city": "Mysuru",
+    "college": "R.V. College of Engineering",
+    "degree": "B.Tech Mechanical Engineering",
+    "graduation_year": 2023,
+    "cgpa": 7.54,
+    "experience_years": 3.1,
+    "experience_label": "3.1 years",
+    "primary_role": "CAE Engineer",
+    "skills": [
+      "Creo",
+      "GD&T",
+      "Tolerance Stack-Up",
+      "Product Design",
+      "3D Printing",
+      "Rapid Prototyping"
+    ],
+    "experience": [
+      "CAE Engineer | TechWorks Engineering, Mysuru | 2024-2027",
+      "Worked on cnc tool life optimization, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "CNC Tool Life Optimization: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using Creo, GD&T, Tolerance Stack-Up, with testing and performance observations."
+    ],
+    "certifications": [
+      "Six Sigma Yellow Belt"
+    ],
+    "achievements": [
+      "Led a 5-member fabrication team"
+    ],
+    "summary": "Mechanical engineering professional with 3.1 years of experience in design, manufacturing, and engineering analysis.",
+    "source_filename": "APP000088_Naveen_Menon.pdf"
+  },
+  {
+    "application_no": "APP000089",
+    "name": "Chaitanya Rao",
+    "department": "MECH",
+    "email": "candidate089@example.com",
+    "phone": "+91-00000-10088",
+    "city": "Visakhapatnam",
+    "college": "Sathyabama Institute of Science and Technology",
+    "degree": "B.E. Mechanical Engineering",
+    "graduation_year": 2024,
+    "cgpa": 8.09,
+    "experience_years": 3.2,
+    "experience_label": "3.2 years",
+    "primary_role": "Production Engineer",
+    "skills": [
+      "ANSYS",
+      "CFD",
+      "Fluent",
+      "Thermal Engineering",
+      "Heat Transfer",
+      "MATLAB",
+      "Python"
+    ],
+    "experience": [
+      "Production Engineer | TechWorks Engineering, Visakhapatnam | 2025-2028",
+      "Worked on robotic pick-and-place cell, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Robotic Pick-and-Place Cell: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using ANSYS, CFD, Fluent, with testing and performance observations."
+    ],
+    "certifications": [
+      "AutoCAD Certification"
+    ],
+    "achievements": [
+      "Presented at an engineering symposium"
+    ],
+    "summary": "Mechanical engineer experienced in CAD, product development, and manufacturing-oriented problem solving.",
+    "source_filename": "APP000089_Chaitanya_Rao.pdf"
+  },
+  {
+    "application_no": "APP000090",
+    "name": "Manasa Reddy",
+    "department": "MECH",
+    "email": "candidate090@example.com",
+    "phone": "+91-00000-10089",
+    "city": "Vijayawada",
+    "college": "BMS College of Engineering",
+    "degree": "B.Tech Production Engineering",
+    "graduation_year": 2025,
+    "cgpa": 8.17,
+    "experience_years": 6.1,
+    "experience_label": "6.1 years",
+    "primary_role": "Automation Engineer",
+    "skills": [
+      "NX CAD",
+      "CAM",
+      "CNC",
+      "Tool Design",
+      "Manufacturing Engineering",
+      "Quality"
+    ],
+    "experience": [
+      "Automation Engineer | TechWorks Engineering, Vijayawada | 2026-2032",
+      "Worked on lightweight bracket redesign, collaborated with cross-functional teams, documented technical changes, and improved delivery reliability."
+    ],
+    "projects": [
+      "Lightweight Bracket Redesign: Designed and implemented a domain-focused prototype, documented requirements, tested key workflows, and presented results.",
+      "Mini Project: Built a practical proof of concept using NX CAD, CAM, CNC, with testing and performance observations."
+    ],
+    "certifications": [
+      "MATLAB for Engineers"
+    ],
+    "achievements": [
+      "Received departmental project award"
+    ],
+    "summary": "Design and automation professional with hands-on exposure to CAD, prototyping, and process improvement.",
+    "source_filename": "APP000090_Manasa_Reddy.pdf"
+  }
+]

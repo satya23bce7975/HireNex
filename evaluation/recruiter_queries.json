@@ -1,0 +1,273 @@
+[
+  {
+    "query": "Show candidates with at least 2 years of experience and Python",
+    "expected_candidate_count": 20,
+    "expected_application_nos": [
+      "APP000004",
+      "APP000006",
+      "APP000011",
+      "APP000012",
+      "APP000016",
+      "APP000017",
+      "APP000022",
+      "APP000024",
+      "APP000028",
+      "APP000030",
+      "APP000035",
+      "APP000041",
+      "APP000046",
+      "APP000054",
+      "APP000059",
+      "APP000071",
+      "APP000076",
+      "APP000082",
+      "APP000084",
+      "APP000089"
+    ],
+    "filter_conditions": {
+      "min_exp": 2,
+      "skill": "Python"
+    }
+  },
+  {
+    "query": "Find CSE candidates with Java and at least 1 year of experience",
+    "expected_candidate_count": 7,
+    "expected_application_nos": [
+      "APP000005",
+      "APP000009",
+      "APP000010",
+      "APP000017",
+      "APP000018",
+      "APP000021",
+      "APP000029"
+    ],
+    "filter_conditions": {
+      "department": "CSE",
+      "skill": "Java",
+      "min_exp": 1
+    }
+  },
+  {
+    "query": "Find ECE candidates with Python",
+    "expected_candidate_count": 14,
+    "expected_application_nos": [
+      "APP000031",
+      "APP000033",
+      "APP000035",
+      "APP000037",
+      "APP000038",
+      "APP000041",
+      "APP000043",
+      "APP000046",
+      "APP000049",
+      "APP000051",
+      "APP000054",
+      "APP000055",
+      "APP000057",
+      "APP000059"
+    ],
+    "filter_conditions": {
+      "department": "ECE",
+      "skill": "Python"
+    }
+  },
+  {
+    "query": "Show Mechanical candidates with SolidWorks and at least 2 years of experience",
+    "expected_candidate_count": 4,
+    "expected_application_nos": [
+      "APP000070",
+      "APP000077",
+      "APP000078",
+      "APP000083"
+    ],
+    "filter_conditions": {
+      "department": "MECH",
+      "skill": "SolidWorks",
+      "min_exp": 2
+    }
+  },
+  {
+    "query": "Find candidates with CGPA above 8.5",
+    "expected_candidate_count": 31,
+    "expected_application_nos": [
+      "APP000003",
+      "APP000011",
+      "APP000016",
+      "APP000017",
+      "APP000019",
+      "APP000027",
+      "APP000028",
+      "APP000029",
+      "APP000031",
+      "APP000032",
+      "APP000033",
+      "APP000036",
+      "APP000042",
+      "APP000046",
+      "APP000050",
+      "APP000051",
+      "APP000053",
+      "APP000055",
+      "APP000058",
+      "APP000059",
+      "APP000064",
+      "APP000065",
+      "APP000067",
+      "APP000069",
+      "APP000072",
+      "APP000074",
+      "APP000076",
+      "APP000081",
+      "APP000082",
+      "APP000084",
+      "APP000087"
+    ],
+    "filter_conditions": {
+      "cgpa": 8.5
+    }
+  },
+  {
+    "query": "Find ECE candidates with FPGA experience",
+    "expected_candidate_count": 4,
+    "expected_application_nos": [
+      "APP000032",
+      "APP000040",
+      "APP000048",
+      "APP000056"
+    ],
+    "filter_conditions": {
+      "department": "ECE",
+      "skill": "FPGA"
+    }
+  },
+  {
+    "query": "Find CSE candidates skilled in React",
+    "expected_candidate_count": 7,
+    "expected_application_nos": [
+      "APP000003",
+      "APP000007",
+      "APP000011",
+      "APP000015",
+      "APP000019",
+      "APP000023",
+      "APP000027"
+    ],
+    "filter_conditions": {
+      "department": "CSE",
+      "skill": "React"
+    }
+  },
+  {
+    "query": "Find Mechanical candidates with ANSYS",
+    "expected_candidate_count": 8,
+    "expected_application_nos": [
+      "APP000062",
+      "APP000065",
+      "APP000070",
+      "APP000073",
+      "APP000078",
+      "APP000081",
+      "APP000086",
+      "APP000089"
+    ],
+    "filter_conditions": {
+      "department": "MECH",
+      "skill": "ANSYS"
+    }
+  },
+  {
+    "query": "Show candidates with less than 1 year of experience",
+    "expected_candidate_count": 30,
+    "expected_application_nos": [
+      "APP000001",
+      "APP000002",
+      "APP000007",
+      "APP000008",
+      "APP000013",
+      "APP000014",
+      "APP000019",
+      "APP000020",
+      "APP000025",
+      "APP000026",
+      "APP000031",
+      "APP000032",
+      "APP000037",
+      "APP000038",
+      "APP000043",
+      "APP000044",
+      "APP000049",
+      "APP000050",
+      "APP000055",
+      "APP000056",
+      "APP000061",
+      "APP000062",
+      "APP000067",
+      "APP000068",
+      "APP000073",
+      "APP000074",
+      "APP000079",
+      "APP000080",
+      "APP000085",
+      "APP000086"
+    ],
+    "filter_conditions": {
+      "max_exp": 0.99
+    }
+  },
+  {
+    "query": "Find Mechanical candidates with Python and automation",
+    "expected_candidate_count": 11,
+    "expected_application_nos": [
+      "APP000061",
+      "APP000063",
+      "APP000068",
+      "APP000071",
+      "APP000075",
+      "APP000076",
+      "APP000079",
+      "APP000082",
+      "APP000084",
+      "APP000087",
+      "APP000089"
+    ],
+    "filter_conditions": {
+      "department": "MECH",
+      "skill": "Python"
+    }
+  },
+  {
+    "query": "Find candidates with Docker",
+    "expected_candidate_count": 12,
+    "expected_application_nos": [
+      "APP000001",
+      "APP000003",
+      "APP000005",
+      "APP000006",
+      "APP000011",
+      "APP000013",
+      "APP000016",
+      "APP000019",
+      "APP000021",
+      "APP000026",
+      "APP000027",
+      "APP000029"
+    ],
+    "filter_conditions": {
+      "skill": "Docker"
+    }
+  },
+  {
+    "query": "Find CSE candidates with machine learning skills",
+    "expected_candidate_count": 4,
+    "expected_application_nos": [
+      "APP000001",
+      "APP000009",
+      "APP000017",
+      "APP000025"
+    ],
+    "filter_conditions": {
+      "department": "CSE",
+      "skill": "Machine Learning"
+    }
+  }
+]

@@ -1,0 +1,4 @@
+HireNex v4
+Build: 4.0.0
+Base: HireNex React + FastAPI v3
+Updates: interactive CSS; live per-resume NLP/LLM progress; improved job ticker states.
